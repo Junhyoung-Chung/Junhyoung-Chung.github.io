@@ -42,13 +42,13 @@ logo:                  /assets/icons/icon.png
 # This should be the same author as first entry in `_data/authors.yml`.
 # Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
 author:
-  name:                <JunHyoung> <Chung>
-  email:               <justin9991@snu.ac.kr>
+  name:                JunHyoung Chung
+  email:               justin9991@snu.ac.kr
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2017. All rights reserved.
+copyright:             © 2023. All rights reserved.
 
 # Add links to the footer.
 # Typically you'll want to link to your impress, cookies or privacy policy, etc.
@@ -245,12 +245,22 @@ titles_from_headings:
   strip_title:         true
   collections:         true
 
-kramdown:
-  footnote_backlink:   '&#x21a9;&#xfe0e;'
-  math_engine:         mathjax
-  math_engine_opts:
-    preview:           true
-    preview_as_code:   true
+# kramdown:
+#   footnote_backlink:   '&#x21a9;&#xfe0e;'
+#   math_engine:         mathjax
+#   math_engine_opts:
+#     preview:           true
+#     preview_as_code:   true
+
+# kramdown:
+#   math_engine: katex
+#   math_engine_opts: {}
+
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 compress_html:
   comments:            ["<!-- ", " -->"]

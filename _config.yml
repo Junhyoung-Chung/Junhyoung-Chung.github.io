@@ -53,10 +53,22 @@ menu:
     url:                 /about/
   - title:               Statistics
     url:                 /statistics/
+    submenu:
+      - title:  CausalInference
+        url:    /causalinferece/
+      - title:  Papers
+        url:    /papers/
+      - title:  Statistics-etc
+        url:    /statistics-etc/
   - title:               Stocks
     url:                 /stocks/
   - title:               Etc
     url:                 /etc/
+    submenu:
+      - title:   GithubPages
+        url:     /githubpages/
+      - title:    Markdown
+        url:      /markdown
   
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc...
@@ -119,9 +131,22 @@ font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
 # To remove Google Anaylics from your page, remove the line below.
 # google_analytics:      UA-XXXXXXXX-X
 
+# Set which comment system to use.
+comments:
+  # 'disqus' or 'utterances' are available.
+  provider:              utterances
+
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
-# disqus:                <disqus_shortname>
+disqus:                junhyoung
+
+# Before to use utterance, you must install utterance github app.
+# Check below link for detail.
+# https://utteranc.es/
+utterances:
+  repo:                "Junhyoung-Chung/blog-comments"
+  issue-term:          "pathname"
+  theme:               "github-light"
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # tinyletter:            <tinyletter_username>
@@ -296,7 +321,7 @@ remote_theme: hydecorp/hydejack@v9.0.5
 # ---------------------------------------------------------------------------------------
 
 # Where you proof that you own this site (used by jekyll-seo-tag)
-google_site_verification: <verification-id>
+google_site_verification: mxyHvjqo__QGaVQoOpNsJyVSbC_Cahxs5UYjqdhdX0w
 # -- or --
 # webmaster_verifications:
 #   google:              <verification-id>
@@ -330,6 +355,7 @@ optional_front_matter:
 
 readme_index:
   remove_originals:    true
+  with_frontmatter:    true
 
 relative_links:
   collections:         true
@@ -339,9 +365,9 @@ titles_from_headings:
   collections:         true
 
 kramdown:
-  footnote_backlink:   '&#x21a9;&#xfe0e;'
   math_engine:         mathjax
-  math_engine_opts:    {} 
+  math_engine_opts:    {}
+  footnote_backlink:   '&#x21a9;&#xfe0e;'
 
 # kramdown:
 #   math_engine: katex
@@ -367,3 +393,47 @@ sass:
 # so that the location of the feed XML stays the same.
 # feed:
 #   path:                atom.xml
+
+# Jekyll Compose Defaults
+# ---------------------------------------------------------------------------------------
+
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      layout: post
+      description: >
+        A short ~160 character description of your post for search engines,
+        social media previews, etc.
+      image:
+        path: /assets/img/sidebar-bg.jpg
+    posts:
+      layout: post
+      description: >
+        A short ~160 character description of your post for search engines,
+        social media previews, etc.
+      image:
+        path: /assets/img/sidebar-bg.jpg
+    projects:
+      layout: project
+      description: >
+        A short ~160 character description of your post for search engines,
+        social media previews, etc.
+      image:
+        path: /assets/img/sidebar-bg.jpg
+      links:
+        - title: Project Link
+          url: https://example.com
+
+
+tipue_search:
+  include:
+    pages: true
+    collections: []
+  exclude:
+    files: []
+    categories: []
+    tags: []
+
+
+mermaid:
+  src: '_includes/scripts/mermaid.js'

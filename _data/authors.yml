@@ -10,8 +10,6 @@ author1:
   about:             |
     Hello world!
 
-    Open `_data/authors.yml` to edit this text.
-
   # This photo will be used in the about section
   picture:
     path:            /assets/img/me.jpg

@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Introducing Hyde
+categories:
+    - etc
+    - markdown
 description: >
   Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content.
 tags: [hyde]

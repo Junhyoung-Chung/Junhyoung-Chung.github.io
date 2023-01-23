@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Example content
+categories:
+    - etc
+    - markdown
 description: >
   This is a normal paragraph following a header.
   GitHub is a code hosting platform for version control and collaboration.

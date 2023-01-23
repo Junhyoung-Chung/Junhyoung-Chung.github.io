@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Hydejack's New Design
+categories:
+    - etc
+    - markdown
 description: >
   This post introduces Hydejack's now background image, color palette and logo.
 image: /assets/img/caleb-george.jpg

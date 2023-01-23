@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: list
 category: etc
 title: Markdown
 order: 2

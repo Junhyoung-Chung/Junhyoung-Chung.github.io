@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: list
 category: statistics
 bigtitle: Statistics-etc
 slug: statistics-etc

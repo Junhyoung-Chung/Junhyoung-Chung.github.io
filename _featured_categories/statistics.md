@@ -1,5 +1,5 @@
 ---
-layout: list
+layout: page
 title: Statistics
 slug: statistics
 menu: true

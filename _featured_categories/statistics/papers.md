@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: list
 category: statistics
 title: Papers
 slug: papers

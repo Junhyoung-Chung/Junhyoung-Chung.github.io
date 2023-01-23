@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: list
 category: etc
 title: Github Pages
 order: 1

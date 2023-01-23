@@ -1,5 +1,5 @@
 ---
-layout: list
+layout: page
 title: Stocks
 slug: stocks
 menu: true

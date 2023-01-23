@@ -8,8 +8,6 @@ menu: true
 order: 1
 ---
 
-# About
-
 <!--author-->
 
 * * *
@@ -19,7 +17,7 @@ order: 1
 </span>
 </center>
 
-<center>MAJOR : College of Liberal Studies (Economics/Statistics)</center>
+<center>MAJOR : College of Liberal Studies (Economics / Statistics)</center>
 
 <center>Seoul National University</center>
 
@@ -31,7 +29,7 @@ order: 1
 
 ## Education
 ---
-> Seoul Nation University
+> Seoul National University
 >
 > Mar.2018 ~
 >
@@ -39,4 +37,35 @@ order: 1
 
 ## Interest
 ---
+* Statistics
+  * Causal Inference
+  * Bayesian Statistics
+  
+* Data Science
+  * Machine Learning
+  * Deep Learning
+
+## Industrial Project
+---
+__강남언니 시술 이벤트 내 이미지와 성과 지표 데이터를 활용한 이미지 분류 체계 도출__ (Project Manager)
+
+> 2022.10~2022.12, Growth Hackers ~ 강남언니
+
+__로드컴플릿 광고 캠페인 종합점수 개발 및 일별 플레이패턴 클러스터링 기반 이탈, LTV 예측모델링__
+
+> 2022.07~2022.09, Growth Hackers ~ 로드컴플릿
+
+__런드리고 요금제 현황 분석 및 유저 행동 패턴에 기반한 최적 요금제 도출__
+
+> 2022.04~2022.06, Growth Hackers ~ 런드리고
+
+## Personal Project
+---
+__주식 자동매매 프로그램 개발__
+
+> 2023.01 ~ See <a href='https://junhyoung-chung.github.io/stocks/'>Stocks</a>.
+
+## Skills
+---
+* Language: Python, R
 

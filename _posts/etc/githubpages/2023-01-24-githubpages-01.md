@@ -9,8 +9,6 @@ description: >
 tags: []
 comments: true
 published: true
-image:
-  path: /assets/img/edit-zshrc.jpg
 ---
 
 # 01-jekyll 설치가 안 될 경우

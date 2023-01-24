@@ -47,7 +47,7 @@ order: 1
 
 ## Industrial Project
 ---
-__강남언니 시술 이벤트 내 이미지와 성과 지표 데이터를 활용한 이미지 분류 체계 도출__ (Project Manager)
+__강남언니 CARD/TITLE/CONTENTS 이미지 정보 추출 및 현황 분석에 기반한 이미지 분류체계 제안__ (Project Manager)
 
 > 2022.10~2022.12, Growth Hackers ~ 강남언니
 

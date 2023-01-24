@@ -9,6 +9,8 @@ description: >
 tags: []
 comments: true
 published: true
+image:
+  path: /assets/img/edit-zshrc.jpg
 ---
 
 # 01-jekyll 설치가 안 될 경우
@@ -28,7 +30,7 @@ gem install jekyll
 
 _&lt;You may have encountered a bug in the Ruby interpreter or extension libraries.&gt;_
 
-에러가 떴다. 찾아보니 ruby
+에러가 떴다. 찾아보니 ruby와 관련한 에러인 것 같았다.
 
 이 역시 <a href="https://supermemi.tistory.com/145">여기</a>에 잘 설명되어 있지만 2022년 글이기도 하고, 그 때와 `rbenv` 버전이 조금 달라진 것 같아 따로 정리해두려고 한다.
 
@@ -92,9 +94,13 @@ vi ~/.zshrc
 ```
 를 치면 아래와 같이 쭉 뜰 것이다.
 
-![~/.zshrc](/assets/img/edit-zshrc.jpg)
+![~/.zshrc](/assets/img/edit-zshrc.jpg "~/.zshrc")
 
-i 를 누르면 insert를 할 수 있는데, 동그라미 위치에 텍스트를 넣고(위치는 크게 상관없을 거 같긴 하다), esc -> :qw -> enter 하면 해당 파일이 수정되어 저장될 것이다.
+1. i 를 입력. insert를 하겠다는 뜻이다.
+2. 동그라미 위치에 텍스트를 복붙하자.
+3. esc -> :qw -> enter 순으로 입력.
+
+순서대로 하면 해당 파일이 수정되어 저장될 것이다.
 
 변경된 파일을 저장해주자.
 

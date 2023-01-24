@@ -157,10 +157,10 @@ utterances:
 
 hydejack:
   # Configure the order of complementary content on blog posts
-  post_addons:         [related, about, newsletter, random, comments]
+  post_addons:         [related, about, newsletter, random]
 
   # Configure the order of complementary content on project pages
-  project_addons:      [about, newsletter, other, comments]
+  project_addons:      [about, newsletter, other]
 
   # If you do not use Google Fonts, set to `true`.
   no_google_fonts:     false

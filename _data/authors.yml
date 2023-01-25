@@ -8,7 +8,8 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Hello world!
+    We need to dive into uncertainty to achieve something new, but it requires huge braveness. 
+    I believe Statistics gives us such power.
 
   # This photo will be used in the about section
   picture:

@@ -3,8 +3,6 @@ title: 01-jekyll 설치가 안 될 경우
 tags:
     - etc
     - githubpages
-description: >
-  bundler, jekyll 설치가 안 될 경우
 ---
 
 일단 나는 MacBook Pro M1 2020을 사용하고 있기 때문에 다른 시스템의 경우 에러 해결과정이 달라질 수 있다.

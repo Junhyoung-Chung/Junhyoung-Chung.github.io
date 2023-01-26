@@ -31,8 +31,8 @@ group :jekyll_plugins do
   gem "jekyll-titles-from-headings"
   gem "jekyll-include-cache"
   gem "jekyll-last-modified-at"
-  gem "jekyll-spaceship"
-  gem "jekyll-mermaid"
+  # gem "jekyll-spaceship"
+  # gem "jekyll-mermaid"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

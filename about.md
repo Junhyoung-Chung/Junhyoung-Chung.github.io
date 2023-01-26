@@ -1,71 +1,74 @@
 ---
-layout: about
-title: About
-hide_description: true
-redirect_from:
-  -
-menu: true
-order: 1
+layout: article
+titles:
+  # @start locale config
+  en      : &EN       About
+  en-GB   : *EN
+  en-US   : *EN
+  en-CA   : *EN
+  en-AU   : *EN
+  zh-Hans : &ZH_HANS  关于
+  zh      : *ZH_HANS
+  zh-CN   : *ZH_HANS
+  zh-SG   : *ZH_HANS
+  zh-Hant : &ZH_HANT  關於
+  zh-TW   : *ZH_HANT
+  zh-HK   : *ZH_HANT
+  ko      : &KO       소개
+  ko-KR   : *KO
+  fr      : &FR       À propos
+  fr-BE   : *FR
+  fr-CA   : *FR
+  fr-CH   : *FR
+  fr-FR   : *FR
+  fr-LU   : *FR
+  # @end locale config
+key: page-about
 ---
 
-<!--author-->
+![TeXt Theme](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/TeXt-home.jpg)
 
-* * *
-<center>
-<span style='font-size:170%;font-weight:bold'>
-정준형
-</span>
-</center>
+TeXt is a super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc. Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
 
-<center>MAJOR : College of Liberal Studies (Economics / Statistics)</center>
+```javascript
+(() => console.log('Hello, World!'))();
+```
 
-<center>Seoul National University</center>
+## Features
 
-## Contact
----
-> Email: justin9991@snu.ac.kr
+- Responsive
+- Semantic HTML
+- Skins
+- Highlight Theme
+- Internationalization
+- Search
+- Table of contents
+- Authors
+- Additional styles (alert, tag, image, icon, button, grid, etc)
+- Extensions (audios, videos, slides, demos)
+- Markdown enhancements ([MathJax](https://www.mathjax.org/), [mermaid](https://mermaidjs.github.io/), [chartjs](http://www.chartjs.org/))
+- Sharing ([AddToAny](https://www.addtoany.com/), [AddThis](https://www.addthis.com/))
+- Comments ([Disqus](https://disqus.com/), [Gitalk](https://gitalk.github.io/), [Valine](https://valine.js.org/en/))
+- Pageview ([LeanCloud](https://leancloud.cn/))
+- Analytics ([Google Analytics](https://analytics.google.com/analytics/web/))
+- RSS ([jekyll-feed](https://github.com/jekyll/jekyll-feed))
 
-> Github : <a href='https://github.com/Junhyoung-Chung'>https://github.com/Junhyoung-Chung</a>
+## Skins
 
-## Education
----
-> Seoul National University
->
-> Mar.2018 ~
->
-> 자유전공학부 경제학, 통계학 전공
+TeXt has 6 built-in skins, you can also set up your own skin.
 
-## Interest
----
-* Statistics
-  * Causal Inference
-  * Bayesian Statistics
-  
-* Data Science
-  * Machine Learning
-  * Deep Learning
+| `default` | `dark` | `forest` |
+| --- |  --- | --- |
+| ![Default](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_default.jpg) | ![Dark](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_dark.jpg) | ![Forest](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_forest.jpg) |
 
-## Industrial Project
----
-__강남언니 CARD/TITLE/CONTENTS 이미지 정보 추출 및 현황 분석에 기반한 이미지 분류체계 제안__ (Project Manager)
+| `ocean` | `chocolate` | `orange` |
+| --- |  --- | --- |
+| ![Ocean](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_ocean.jpg) | ![Chocolate](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_chocolate.jpg) | ![Orange](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_orange.jpg) |
 
-> 2022.10~2022.12, Growth Hackers ~ 강남언니
+### Highlight Theme
 
-__로드컴플릿 광고 캠페인 종합점수 개발 및 일별 플레이패턴 클러스터링 기반 이탈, LTV 예측모델링__
+TeXt use [Tomorrow](https://github.com/chriskempson/tomorrow-theme) as the highlight theme.
 
-> 2022.07~2022.09, Growth Hackers ~ 로드컴플릿
-
-__런드리고 요금제 현황 분석 및 유저 행동 패턴에 기반한 최적 요금제 도출__
-
-> 2022.04~2022.06, Growth Hackers ~ 런드리고
-
-## Personal Project
----
-__주식 자동매매 프로그램 개발__
-
-> 2023.01 ~ See <a href='https://junhyoung-chung.github.io/stocks/'>Stocks</a>.
-
-## Skills
----
-* Language: Python, R
-
+| `tomorrow` | `tomorrow-night` | `tomorrow-night-eighties` | `tomorrow-night-blue` | `tomorrow-night-bright` |
+| --- |  --- | --- | --- |  --- |
+| ![Tomorrow](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow.png) | ![Tomorrow Night](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night.png) | ![Tomorrow Night Eighties](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-eighties.png) | ![Tomorrow Night Blue](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-blue.png) | ![Tomorrow Night Bright](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-bright.png) |

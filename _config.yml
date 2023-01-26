@@ -1,433 +1,225 @@
-# Config
-# ========================================================================================
-
-# IMPORTANT: Set the URL of your site.
-# Set to https://<username>.github.io when hosting on GitHub Pages
-# (unless you are using a custom domain).
-url:                   https://junhyoung-chung.github.io
-
-# IMPORTANT: Set The "base URL" of your site.
+# Welcome to Jekyll!
 #
-# When hosting your site in a subdirectory of a server, set to /<name of directory>
-# (with leading /, but without the < >)
-# Use the empty string '' otherwise.
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 #
-# When using GitHub Pages, set to '' when hosting a user- or organization page,
-# i.e. when the name of the repository looks like <username>.github.io.
-# Otherwise, set to /<name of repository> (with leading /, but without the < >).
-baseurl:               ''
+# ,--------.      ,--.   ,--. ,--.
+# '--.  .--',---.  \  `.'  /,-'  '-.
+#    |  |  | .-. :  .'    \ '-.  .-'
+#    |  |  \   --. /  .'.  \  |  |
+#    `--'   `----''--'   '--' `--'
 
-# Language of your content in 2-letter code, e.g.: en, de.
-# You may also provide a location, e.g.: en-us, de_AT.
-lang:                  kr-KR, en-US
 
-# The title of your blog. Used in the sidebar and the browser tab.
-title:                 JunHyoung
 
-# A short description (~150 chars) of the page used for the meta description tag.
-# Can use markdown, but no more than one paragraph (enforced by `>`)
-description:           >
-  This blog is for recording my personal studying.
 
-# A shorter description for the sidebar.
-tagline:               >
-  개인적으로 공부를 하며 기록해두고 싶은 것들을 남길 예정입니다.
+## => Site Settings
+##############################
+text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
+highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+url     : # the base hostname & protocol for your site e.g. https://www.someone.com
+baseurl : # does not include hostname
+title   : Your Site Title
+description: > # this means to ignore newlines until "Language & timezone"
+  Your Site Description
 
-# A list of keywords for your blog
-keywords:              [AI, computer science, data science, blog, statistics]
 
-# Used by jekyll-seo-tag...
-logo:                  /assets/icons/icon.png
+## => Language and Timezone
+##############################
+lang: # the language of your site, default as "en"
+timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
-# This should be the same author as first entry in `_data/authors.yml`.
-# Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
+
+## => Author and Social
+##############################
 author:
-  name:                JunHyoung Chung
-  email:               justin9991@snu.ac.kr
-  # Used by `jekyll-seo-tag`:
-  # twitter:             <username>
-
-# Add links to the sidebar.
-menu:
-  - title:               About
-    url:                 /about/
-  - title:               Statistics
-    url:                 /statistics/
-    submenu:
-      - title:  CausalInference
-        url:    /causalinferece/
-      - title:  Papers
-        url:    /papers/
-      - title:  Statistics-etc
-        url:    /statistics-etc/
-  - title:               Stocks
-    url:                 /stocks/
-  - title:               Etc
-    url:                 /etc/
-    submenu:
-      - title:   GithubPages
-        url:     /githubpages/
-      - title:    Markdown
-        url:      /markdown
-  
-# Add links to the footer.
-# Typically you'll want to link to your cookie- or privacy policy (if appliable), etc...
-legal:
-  - title:               LICENSE
-    url:                 /LICENSE/
-  - title:               NOTICE
-    url:                 /NOTICE/
-  - title:               CHANGELOG
-    url:                 /CHANGELOG/
-
-# This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2023. All rights reserved.
-
-# Add links to the footer.
-# Typically you'll want to link to your impress, cookies or privacy policy, etc.
-# legal:
-#   - title:             Impress
-#     href:              /impress/
-#   - title:             Cookies Policy
-#     href:              /cookies-policy/
-
-# Format of the permalinks
-permalink:             pretty
-
-# Pagination configuration (used by the `blog` layout)
-paginate:              5
-paginate_path:         /page-:num/
+  type      : # "person" (default), "organization"
+  name      : Your Name
+  url       :
+  avatar    : # path or url of avatar image (square)
+  bio       : I am an amazing person.
+  email     :
+  facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
+  twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
+  weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
+  googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
+  telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
+  medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
+  zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
+  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
+  linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
+  github    : # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
-# Customizaton
-# ========================================================================================
+## => GitHub Repository (if the site is hosted by GitHub)
+##############################
+repository: user_name/repo_name
+repository_tree: master
 
-# Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
-accent_color:          '#4fb1ba'
 
-# This is used for the 'theme-color' meta tag,
-# which changes the backgroud color of the browser UI in certain browsers.
-# Defaults to 'accent_color'.
-theme_color:           '#4fb1ba'
+## => Paths
+##############################
+paths:
+  root    : # title link url, "/" (default)
+  home    : # home layout url, "/" (default)
+  archive : # "/archive.html" (default)
+  rss     : # "/feed.xml" (default)
 
-# The string encoding which fonts to fetch from Google Fonts.
-# See: <https://qwtel.com/hydejack/docs/configuration/>
-google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
 
-# The text font. Expects a string that is a valid CSS font-family value.
-font:                  Noto Sans, Helvetica, Arial, sans-serif
+## => Post
+##############################
+## excerpt
+excerpt_separator: <!--more-->
 
-# The font used for headings. Expects a string that is a valid CSS font-family value.
-font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
+## license
+license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
 
-# The font used for headings. Expects a string that is a valid CSS font-family value.
-font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
+## TOC
+toc:
+  selectors: # "h1,h2,h3" (default)
 
-# 3rd Party Integrations
-# ----------------------------------------------------------------------------------------
 
-# Set your Google Analytics id to receive `pageview` events.
-# To remove Google Anaylics from your page, remove the line below.
-# google_analytics:      UA-XXXXXXXX-X
+## => Markdown Enhancements
+##############################
+## Mathjax
+mathjax: # false (default), true
+mathjax_autoNumber: # false (default), true
 
-# Set which comment system to use.
+## Mermaid
+mermaid: # false (default), true
+
+## Chart
+chart: # false (default), true
+
+
+## => Paginate
+##############################
+paginate: 8
+paginate_path: /page:num # don't change this unless for special need
+
+
+## => Sources
+##############################
+sources: # bootcdn (default), unpkg
+
+
+## => Sharing
+##############################
+sharing:
+  provider: false # false (default), "addtoany", "addthis", "custom"
+
+  ## AddThis
+  addthis:
+    id: # AddThis pubid, e.g. ra-5xxxxxxxxxxx
+
+
+## => Comments
+##############################
 comments:
-  # 'disqus' or 'utterances' are available.
-  provider:              utterances
+  provider: false # false (default), "disqus", "gitalk", "valine", "custom"
 
-# Setting a disqus shortname will enable the comment section on
-# pages with `comments: true` in the front matter.
-disqus:                junhyoung
+  ## Disqus
+  disqus:
+    shortname: # the Disqus shortname for the site
 
-# Before to use utterance, you must install utterance github app.
-# Check below link for detail.
-# https://utteranc.es/
-utterances:
-  repo:                "Junhyoung-Chung/blog-comments"
-  issue-term:          "pathname"
-  theme:               "github-light"
+  ## Gitalk
+  # please refer to https://github.com/gitalk/gitalk for more info.
+  gitalk:
+    clientID    : # GitHub Application Client ID
+    clientSecret: # GitHub Application Client Secret
+    repository  : # GitHub repo
+    owner       : # GitHub repo owner
+    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+      # - your GitHub Id
 
-# Setting a tinyletter username will enable the newsletter subscription box.
-# tinyletter:            <tinyletter_username>
-
-# Hydejack Settings
-# ----------------------------------------------------------------------------------------
-# These settings are specific to Hydejack.
-
-hydejack:
-  # Configure the order of complementary content on blog posts
-  post_addons:         [related, about, newsletter, random]
-
-  # Configure the order of complementary content on project pages
-  project_addons:      [about, newsletter, other]
-
-  # If you do not use Google Fonts, set to `true`.
-  no_google_fonts:     false
-
-  # Set to `true` if you don't want to show an icon indicating external links
-  no_mark_external:    false
-
-  # Set to `true` if third party plugins fail to work with dynamically loaded pages
-  no_push_state:       false
-
-  # Set to `true` if you want to disable the drawer
-  no_drawer:           false
-
-  # Set to `true` if you do not want parts of the css inlined in <head/>
-  # This *may* be benefitial when serving the site over HTTP/2.
-  no_inline_css:       false
-
-  # Code blocks and tables "break" the layout by spanning the full available width.
-  # Set this to true if you want them to be the same width as other content.
-  no_break_layout:     false
-
-  # Set to `true` if you do not want to expose your resume and projects
-  # in machine-readable formats.
-  no_structured_data:  false
-
-  # You can set this to `true` if you don't want to set the `theme-color` meta tag,
-  # This only affects the meta tag, not the color specified in the app manifest.
-  no_theme_color:      false
-
-  # Set to `true` when building with the `--lsi` option
-  use_lsi:             false
-
-  # When using Google Analytics, set to `true` to display a cookie notice banner.
-  # When enabled, no user-related data will be stored until the user gives consent.
-  cookies_banner:      false
+  ## Valine
+  # please refer to https://valine.js.org/en/ for more info.
+  valine:
+    app_id      : # LeanCloud App id
+    app_key     : # LeanCloud App key
+    placeholder : # Prompt information
+    visitor     : # false (default)
+    meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
 
 
-# Collections
-# ========================================================================================
+## => Pageview
+##############################
+pageview:
+  provider: false # false (default), "leancloud", "custom"
 
-collections:
-  featured_categories:
-    permalink:         /:name/
-    output:            true
-
-  featured_tags:
-    permalink:         /:name/
-    output:            true
-
-  projects:
-    permalink:         /projects/:path/
-    output:            true
+  ## Leancloud
+  leancloud:
+    app_id    : # LeanCloud App id
+    app_key   : # LeanCloud App key
+    app_class : # LeanCloud App class
 
 
-# File inclusion/exclusion
-# ========================================================================================
+## => Search
+##############################
+search:
+  provider: default # "default" (default), false, "google", "custom"
+
+  ## Google Custom Search Engine
+  google:
+    custom_search_engine_id: # Google Custom Search Engine ID
+
+
+## => Analytics
+##############################
+analytics:
+  provider: false # false (default), "google", "custom"
+
+  ## Google Analytics
+  google:
+    tracking_id : # Google Analytics id for the site
+    anonymize_ip: false # Anonymize IP tracking for Analytics
+
+
+## => Build
+##############################
+markdown    : kramdown
+highlighter : rouge
+permalink   : date
 
 exclude:
-  - vendor
+  - CHANGELOG.md
+  - HOW_TO_RELEASE.md
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - package.json
+  - LICENSE
+  - README-*.md
+  - README.md
+  - gulpfile.js
+  - jekyll-text-theme.gemspec
   - package-lock.json
-include:
-  - LICENSE.md
+  - package.json
+  - /docs
+  - /node_modules
+  - /screenshots
+  - /test
+  - /vendor
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: article
+      sharing: true
+      license: true
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_subscribe: true
+      pageview: true
 
 
-# Plugins and Plugin Configuration
-# ========================================================================================
-
+## => Plugins
+##############################
 plugins:
-  # - jekyll-avatar
-  - jekyll-default-layout
   - jekyll-feed
-  # - jekyll-gist
-  - jekyll-optional-front-matter
   - jekyll-paginate
-  - jekyll-readme-index
-  - jekyll-redirect-from
-  - jekyll-relative-links
-  # - jekyll-remote-theme
-  - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-titles-from-headings
-  - jekyll-include-cache
-  - jekyll-last-modified-at
-  # - jekyll-spaceship
-  # - jekyll-mermaid
-
-# jekyll-spaceship:
-#    # default enabled processors
-#   processors:
-#     - table-processor
-#     - mathjax-processor
-#     - plantuml-processor
-#     - mermaid-processor
-#     - polyfill-processor
-#     - media-processor
-#     - emoji-processor
-#     - element-processor
-#   mathjax-processor:
-#     src:
-#       - https://polyfill.io/v3/polyfill.min.js?features=es6
-#       - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-#     config:
-#       tex:
-#         inlineMath:
-#           - ['$','$']
-#           - ['\(','\)']
-#         displayMath:
-#           - ['$$','$$']
-#           - ['\[','\]']
-#       svg:
-#         fontCache: 'global'
-#     optimize: # optimization on building stage to check and add mathjax scripts
-#       enabled: true # value `false` for adding to all pages
-#       include: []   # include patterns for math expressions checking (regexp)
-#       exclude: []   # exclude patterns for math expressions checking (regexp)
-#   plantuml-processor:
-#     mode: default  # mode value 'pre-fetch' for fetching image at building stage
-#     css:
-#       class: plantuml
-#     syntax:
-#       code: 'plantuml!'
-#       custom: ['@startuml', '@enduml']
-#     src: http://www.plantuml.com/plantuml/svg/
-#   mermaid-processor:
-#     mode: default  # mode value 'pre-fetch' for fetching image at building stage
-#     css:
-#       class: mermaid
-#     syntax:
-#       code: 'mermaid!'
-#       custom: ['@startmermaid', '@endmermaid']
-#     config:
-#       theme: default
-#     src: https://mermaid.ink/svg/
-#   media-processor:
-#     default:
-#       id: 'media-{id}'
-#       class: 'media'
-#       width: '100%'
-#       height: 350
-#       frameborder: 0
-#       style: 'max-width: 600px; outline: none;'
-#       allow: 'encrypted-media; picture-in-picture'
-#   emoji-processor:
-#     css:
-#       class: emoji
-#     src: https://github.githubassets.com/images/icons/emoji/
-# Theme
-# ---------------------------------------------------------------------------------------
-
-# theme: jekyll-theme-hydejack          # 무조건 주석 처리를 하라고 하네요...?
-remote_theme: hydecorp/hydejack@v9.0.5
-
-# SEO Tag
-# ---------------------------------------------------------------------------------------
-
-# Where you proof that you own this site (used by jekyll-seo-tag)
-google_site_verification: mxyHvjqo__QGaVQoOpNsJyVSbC_Cahxs5UYjqdhdX0w
-# -- or --
-# webmaster_verifications:
-#   google:              <verification-id>
-#   bing:                <verification-id>
-#   alexa:               <verification-id>
-#   yandex:              <verification-id>
-
-# Used for Twitter cards
-# twitter:
-#   username:            <shortname>
-
-# Used for Facebook open graph
-# facebook:
-#   app_id:              <id>
-#   publisher:           <id>
-#   admins:              <id>
-
-# Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/<username>
-
-
-# Other Plugins
-# ---------------------------------------------------------------------------------------
-
-optional_front_matter:
-  remove_originals:    true
-
-readme_index:
-  remove_originals:    true
-  with_frontmatter:    true
-
-relative_links:
-  collections:         true
-
-titles_from_headings:
-  strip_title:         true
-  collections:         true
-
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-# Markdown Processing
-kramdown:
-input: GFM
-hard_wrap: false
-auto_ids: true
-footnote_nr: 1
-entity_output: as_char
-toc_levels: 1..6
-smart_quotes: lsquo,rsquo,ldquo,rdquo
-enable_coderay: false
-
-# If you are upgrading form v5 (or earlier), uncomment the lines below,
-# so that the location of the feed XML stays the same.
-# feed:
-#   path:                atom.xml
-
-# Jekyll Compose Defaults
-# ---------------------------------------------------------------------------------------
-
-jekyll_compose:
-  default_front_matter:
-    drafts:
-      layout: post
-      description: >
-        A short ~160 character description of your post for search engines,
-        social media previews, etc.
-      image:
-        path: /assets/img/sidebar-bg.jpg
-    posts:
-      layout: post
-      description: >
-        A short ~160 character description of your post for search engines,
-        social media previews, etc.
-      image:
-        path: /assets/img/sidebar-bg.jpg
-    projects:
-      layout: project
-      description: >
-        A short ~160 character description of your post for search engines,
-        social media previews, etc.
-      image:
-        path: /assets/img/sidebar-bg.jpg
-      links:
-        - title: Project Link
-          url: https://example.com
-
-
-tipue_search:
-  include:
-    pages: true
-    collections: []
-  exclude:
-    files: []
-    categories: []
-    tags: []
-
-
-mermaid:
-  src: '_includes/scripts/mermaid.js'
+  - jemoji

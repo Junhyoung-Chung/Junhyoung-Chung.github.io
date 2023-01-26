@@ -35,9 +35,9 @@ layout: base
   <head>
     {% include head.html %}
     {% include head/custom.html %}
-    {% if page.use_math %}
+    <!-- {% if page.use_math %}
       {% include mathjax_support.html %}
-    {% endif %}
+    {% endif %} -->
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
@@ -71,9 +71,9 @@ layout: base
   <header>
     <h1 class="page-title">{{ page.title | default:strings.home | default:"Home" }}</h1>
     {% include message.html text=page.description hide=page.hide_description %}
-    <!-- {% if page.use_math %}
+    {% if page.use_math %}
       {% include mathjax_support.html %}
-    {% endif %} -->
+    {% endif %}
   </header>
 
   {{ content }}

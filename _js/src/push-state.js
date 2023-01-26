@@ -57,7 +57,7 @@ import {
 import { animate, empty, getResolvablePromise, hasFeatures, isSafari, isFirefoxIOS }
   from './common';
 import CrossFader from './cross-fader';
-import upgradeMathBlocks from './katex';
+// import upgradeMathBlocks from './katex';
 import loadDisqus from './disqus';
 import setupFLIP from './flip';
 
@@ -398,18 +398,18 @@ if (!window._noPushState && hasFeatures(REQUIREMENTS) && !isFirefoxIOS) {
   // Once the content is faded in, upgrade the math blocks with KaTeX.
   // This can take a while and will trigger multiple repaints,
   // so we don't want to start until after the animation.
-  fadeIn$.pipe(
-    tap(upgradeMathBlocks),
-    tap(loadDisqus),
+  // fadeIn$.pipe(
+  //   tap(upgradeMathBlocks),
+  //   tap(loadDisqus),
 
-    // Finally, after some debounce time, send a `pageview` to Google Analytics (if applicable).
-    filter(() => !!window.ga),
-    debounceTime(GA_DELAY),
-  )
-    .subscribe(() => {
-      window.ga('set', 'page', window.location.pathname);
-      window.ga('send', 'pageview');
-    });
+  //   // Finally, after some debounce time, send a `pageview` to Google Analytics (if applicable).
+  //   filter(() => !!window.ga),
+  //   debounceTime(GA_DELAY),
+  // )
+  //   .subscribe(() => {
+  //     window.ga('set', 'page', window.location.pathname);
+  //     window.ga('send', 'pageview');
+  //   });
 
   // ### Show error page
   // In case of a network error, we don't want to show the browser's default offline page.

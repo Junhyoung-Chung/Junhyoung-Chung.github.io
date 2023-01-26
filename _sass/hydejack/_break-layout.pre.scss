@@ -19,7 +19,7 @@
 // SOFTWARE.
 
 // <<<<< LINK
-table:not(.highlight), .katex-display, .break-layout  {
+table:not(.highlight), .break-layout  {
   @media screen {
     position: relative;
     width: calc(100vw - .5rem);

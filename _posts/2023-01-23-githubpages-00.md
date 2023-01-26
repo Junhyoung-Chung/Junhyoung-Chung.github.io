@@ -1,17 +1,9 @@
 ---
-layout: post
 title: 00-들어가며
-categories:
+tags:
     - etc
     - githubpages
-description: >
-  Github 블로그를 만들게 된 계기
-tags: []
-comments: true
-published: true
 ---
-
-# 00-들어가며
 
 언젠가부터 내가 열심히 공을 들여 찾아본 것들을 기록해야겠다는 생각을 계속 했다. 근데 네이버 블로그에 올리자니 몇 가지 문제점들이 있었는데,
 

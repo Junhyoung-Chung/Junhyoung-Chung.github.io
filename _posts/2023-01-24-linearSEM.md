@@ -52,6 +52,6 @@ $$
 
 쉽네요!
 
-Reference
+## Reference
 
 * <a href="https://arxiv.org/pdf/1206.3273.pdf">Discovering Cyclic Causal Models by Independent Components Analysis</a>

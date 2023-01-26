@@ -1,14 +1,10 @@
 ---
-layout: post
 title: 00-들어가며
 tags:
     - etc
     - githubpages
 description: >
   Github 블로그를 만들게 된 계기
-tags: []
-comments: true
-published: true
 ---
 
 # 00-들어가며

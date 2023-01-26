@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 00-들어가며
-categories:
+tags:
     - etc
     - githubpages
 description: >

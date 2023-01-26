@@ -11,8 +11,6 @@ description: >
 
 우선 Github 블로그를 시작하기 위해서는 Repository를 새로 만들어야 하는데, 이 과정은 <a href="https://supermemi.tistory.com/entry/나만의-블로그-만들기-Git-hub-blog-GitHubio">여기</a>에 너무 잘 설명되어 있다. 그냥 그대로 따라하면 된다!!
 
-<!--more-->
-
 그리고 다음으로
 
 ```zsh

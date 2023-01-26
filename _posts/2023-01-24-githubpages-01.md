@@ -140,7 +140,6 @@ Server address: http://127.0.0.1:4000/
 다음에는 Github 블로그 테마를 정리해봐야겠다. 나중에 시간날 때 `rbenv rehash`가 정확히 무슨 역할하는지도 함 찾아봐야겠다.
 
 ## Reference
----
 
 * <a href="https://supermemi.tistory.com/entry/나만의-블로그-만들기-Git-hub-blog-GitHubio">나만의 블로그 만들기 Git hub blog!! (github.io)</a>
 

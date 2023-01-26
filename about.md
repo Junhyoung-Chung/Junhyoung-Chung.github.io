@@ -80,7 +80,7 @@ __런드리고 요금제 현황 분석 및 유저 행동 패턴에 기반한 최
 
 __주식 자동매매 프로그램 개발__
 
-> 2023.01 ~ See <a href='https://junhyoung-chung.github.io/stocks/'>Stocks</a>.
+> 2023.01 ~ See <a href='https://junhyoung-chung.github.io/archive.html?tag=stocks'>Stocks</a>.
 
 ## Skills
 

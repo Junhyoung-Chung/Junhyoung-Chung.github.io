@@ -65,6 +65,13 @@ Hydejack 코드에서 `katex`와 관련된 것들은 모두 지우고 `mathjax`�
 
 이쯤되니 내가 해볼 수 있는 건 다 해봤다는 생각이 들어서 Hydejack 테마는 포기하기로 했다. 테마 디자인이 너무 마음에 들었어서 아쉽긴 하다. 그래도 나한테는 수학 수식 잘 먹히는 게 가장 중요한 것 중 하나였기 때문에.. 눈물을 머금고 보내주었다. 오히려 이렇게 며칠을 고민하면서 계속 찾아보다보니 자바스크립트도 아주 살짝 느낌을 잡은 것 같기도 하다. 긍정적으로 생각하자!
 
+## TeXt
+
+### 왜 TeXt를  선택했는가?
+
+블로그를 돌아다니면서 딱 하나 완벽하게 수학 수식이 잘 나타나는 곳이 있었는데 <a href="https://angeloyeo.github.io">공돌이의 수학정리노트</a> 여기였다. 근데 이 분께서 TeXt 테마를 쓰고 계셨다. 또 하나 특이했던 건 모든 page가 .html로 URL 링크가 끝난다는 것이었다. 그래서 수학 수식이 잘 들어가나? 라는 생각이 들었다. 그리고 또 <a href="https://github.com/kitian616/jekyll-TeXt-theme">jekyll-TeXt-theme Github</a>을 보면 코드들도 깔끔하게 잘 정리되어 있는 것 같아 선택했다.
+
+결과적으로 아직까진 만족스럽다. 한번 Hydejack에서 빡세게 구르고 나니 기본 세팅을 완료하는 데까지 1시간도 안 걸렸다. 그리고 역시 수학수식은 완벽하게 다 한번에 나온다. 테마도 Hydejack에 비해서는 이펙트가 덜하긴 하지만 이 정도면 깔끔하고 예쁘다. 근데 진짜 왜 여기서는 수학 수식이 잘 나오는 걸까? 궁금하지만, 이걸로 너무 고생했기 때문에 당분간 쳐다도 안 볼 예정이다...ㅎㅎ
 
 ## Reference
 
@@ -81,3 +88,7 @@ Hydejack 코드에서 `katex`와 관련된 것들은 모두 지우고 `mathjax`�
 * <a href="https://docs.mathjax.org/en/v2.7-latest/configuration.html">MathJax v2.7.7. Document</a>
 
 * <a href="http://csega.github.io/mypost/2017/03/28/how-to-set-up-mathjax-on-jekyll-and-github-properly.html#">How to set up MathJax on Jekyll and GitHub properly?</a>
+
+* <a href="https://angeloyeo.github.io">공돌이의 수학정리노트</a>
+
+* <a href="https://github.com/kitian616/jekyll-TeXt-theme">jekyll-TeXt-theme Github</a>

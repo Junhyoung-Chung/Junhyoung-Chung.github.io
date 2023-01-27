@@ -129,8 +129,8 @@ comments:
   gitalk:
     clientID    : 0cfeab7ea89e59aee400 # GitHub Application Client ID
     clientSecret: db4693ea738a912fbd4d8a8ec651958601762a04 # GitHub Application Client Secret
-    repository  : junhyoung-chung/blog-comments # GitHub repo
-    owner       : junhyoung-chung # GitHub repo owner
+    repository  : Junhyoung-Chung/blog-comments # GitHub repo
+    owner       : Junhyoung-Chung # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       - junhyoung-chung
 

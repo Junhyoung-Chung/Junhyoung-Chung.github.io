@@ -1,4 +1,5 @@
 ---
+layout: article
 title: 03-Hydejack에서 TeXt로 넘어오기까지
 tags:
     - etc

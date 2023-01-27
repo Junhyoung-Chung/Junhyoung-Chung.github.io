@@ -1,4 +1,5 @@
 ---
+layout: article
 title: 00-들어가며
 tags:
     - etc

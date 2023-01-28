@@ -346,7 +346,7 @@ articles = html.select('ul.list_news > li')
 
 그럼 끝!
 
-### Result
+## Result
 
 ![최종 결과](/assets/images/crawling-result.jpg)
 

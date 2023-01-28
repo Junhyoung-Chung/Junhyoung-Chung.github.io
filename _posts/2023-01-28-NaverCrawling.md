@@ -128,7 +128,7 @@ class NaverNews:
 
 우선 한줄한줄 찬찬히 들여다보도록 하자.
 
-### \_\_init\_\_
+## \_\_init\_\_
 
 ```python
 def __init__(self,search,start_date,end_date,search_area):
@@ -154,7 +154,7 @@ def __init__(self,search,start_date,end_date,search_area):
 
 `search_area`는 내가 10으로 설정하면, 10페이지까지만 크롤링을 하고 그런 식이다.
 
-### set_params
+## set_params
 
 ```python
 def set_params(self):
@@ -182,7 +182,7 @@ Request를 넣어줄 때에는 `params`라는 딕셔너리에 내가 원하고�
 
 ![쿼리스트링 예시](/assets/images/querystring.jpg)
 
-### crawling
+## crawling
 
 ```python
 def crawling(self):

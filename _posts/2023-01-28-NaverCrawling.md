@@ -348,6 +348,19 @@ articles = html.select('ul.list_news > li')
 
 ## Result
 
+```python
+cls = NaverNews(
+    search = "삼성전자",
+    start_date = datetime.datetime(2018,3,22),
+    end_date = datetime.datetime(2018,3,23),
+    search_area = 10
+)
+cls.set_params()
+cls.crawling()
+
+cls.result # 최종 결과 데이터프레임
+```
+
 ![최종 결과](/assets/images/crawling-result.jpg)
 
 만약 크롤링이 전부 정상적으로 되었다면 위와 같은 데이터프레임이 나오게 되고 `self.save()` 함수를 통해 csv 파일을 원하는 경로에 저장하면 된다.

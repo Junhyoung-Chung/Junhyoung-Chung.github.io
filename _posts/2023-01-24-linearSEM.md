@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Linear SEMs
 tags:
     - statistics

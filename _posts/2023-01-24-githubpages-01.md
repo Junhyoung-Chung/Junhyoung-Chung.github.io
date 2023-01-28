@@ -1,5 +1,4 @@
 ---
-layout: article
 title: 01-jekyll 설치가 안 될 경우
 tags:
     - etc

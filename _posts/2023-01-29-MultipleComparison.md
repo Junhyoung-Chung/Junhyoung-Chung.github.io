@@ -5,7 +5,7 @@ tags:
     - statistics-etc
 ---
 
-유의수준 $\alpha$ 하에서 $r$게의 가설검정을 진행하는 프로세스를 생각해보자.
+유의수준 $\alpha$ 하에서 $r$개의 가설검정을 진행하는 프로세스를 생각해보자.
 
 $$
 H_{0i} \quad \text{vs.} \quad H_{1i} \quad i=1,\dots,r

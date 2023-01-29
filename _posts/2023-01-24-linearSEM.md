@@ -1,9 +1,9 @@
 ---
 title: Linear SEMs
 tags:
-    - statistics
-    - causalinference
-    - graphical
+    - Statistics
+    - Causal Inference
+    - Graphical
 ---
 
 Linear Structural Equation Models(SEMs)는 인과추론의 가장 기본적인 모델로 정말 폭넓은 분야에서 많이 쓰인다고 한다!

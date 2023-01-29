@@ -1,8 +1,8 @@
 ---
 title: Multiple Comparisons
 tags:
-    - statistics
-    - statistics-etc
+    - Statistics
+    - Statistics-etc
 ---
 
 유의수준 $\alpha$ 하에서 $r$개의 가설검정을 진행하는 프로세스를 생각해보자.

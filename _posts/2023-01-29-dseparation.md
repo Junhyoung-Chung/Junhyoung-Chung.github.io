@@ -108,13 +108,13 @@ $$
 P(Z=z \mid Y=y) = P(Z=z)
 $$
 
-그렇다면 $S=\left\{ W \right\}$가 되는 순간 역시 2번 조건에 따라 $Z$와 $Y$는 dependent해진다는 것을 알 수 있을 것이다. $S=\left\{ U \right\}$ 로 잡아도 마찬가지이다.
+그렇다면 $S=\left\\{ W \right\\}$ 가 되는 순간 역시 2번 조건에 따라 $Z$와 $Y$는 dependent해진다는 것을 알 수 있을 것이다. $S=\left\\{ U \right\\}$ 로 잡아도 마찬가지이다.
 
 $$
 P(Z=z \mid Y=y,W=w) \neq P(Z=z \mid W=w)
 $$
 
-$S=\left\{ W,X \right\}$ 이면 어떻게 될까? $W \leftarrow X \to Y$라는 fork 때문에 1번 정의에 따라 $Z$와 $Y$는 독립이다.
+$S=\left\\{ W,X \right\\}$ 이면 어떻게 될까? $W \leftarrow X \to Y$라는 fork 때문에 1번 정의에 따라 $Z$와 $Y$는 독립이다.
 
 $$
 P(Z=z \mid Y=y,W=w,X=x) = P(Z=z \mid W=w,X=x)

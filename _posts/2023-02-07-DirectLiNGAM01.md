@@ -155,7 +155,7 @@ Cov(\mathbf{x}_{P_j},x_j) & = E[\mathbf{x}_{P_j}x_j]
 \end{aligned}
 $$
 
-가 된다. 그리고 $E[\mathbf{x}\_{P_j}\mathbf{x}\_{P_j}^{T}]$는 $\mathbf{x}\_{P_j}$의 공분산 행렬로 positive definite이다. 또한 $\mathbf{b}\_{P_j}$ 역시 non-zero vector이기 때문에 $Cov(\mathbf{x}\_{P_j},x_j) \neq 0$ 이다. 즉, $x_j$와 그 parent 변수들 간에는 상관관계가 0이 아닌 변수가 적어도 하나 이상 존재함을 의미한다. 그 변수를 $x_i$라 해보자. 즉, $Cov(x_i,x_j) \neq 0$.
+가 된다. 그리고 $E[\mathbf{x}\_{P_j}\mathbf{x}\_{P_j}^{T}]$는 $\mathbf{x}\_{P_j}$의 공분산 행렬로 positive definite이다. 또한 $\mathbf{b}\_{P_j}$ 역시 non-zero vector이기 때문에 $Cov(\mathbf{x}\_{P_j},x_j) \neq 0$ 이다. 이는 $x_j$와 그 parent 변수들 간에는 상관관계가 0이 아닌 변수가 적어도 하나 이상 존재함을 의미한다. 그 변수를 $x_i$라 해보자. 즉, $Cov(x_i,x_j) \neq 0$.
 
 $$
 \begin{aligned}

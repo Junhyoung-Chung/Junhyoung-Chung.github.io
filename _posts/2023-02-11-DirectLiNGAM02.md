@@ -164,6 +164,8 @@ W --> Y;
 
 다음 글에서는 실제 데이터를 모형이 얼마나 잘 설명하는지 다뤄보겠다.
 
+{% include video.html id="W_oDaNr53PQ" %}  
+
 ## Reference
 
 * <a href="https://www.jmlr.org/papers/volume12/shimizu11a/shimizu11a.pdf">DirectLiNGAM: A Direct Method for Learning a Linear non-Gaussian Structural Equation Model</a>

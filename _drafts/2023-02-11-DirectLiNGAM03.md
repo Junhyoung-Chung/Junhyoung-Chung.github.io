@@ -18,7 +18,7 @@ tags:
   <img src="/assets/images/directlingam-figure2.jpg" width="410" />
 </p>
 
-Figure 1은 $\mathbf{B}$가 sparese한 경우, Figure 2는 $\mathbf{B}$가 dense한 경우 DirectLiNGAM(좌)와 ICA-LiNGAM(우)의 성능을 보여주고 있다. x축이 실제 $b_{ij}$, y축이 측정된 $b_{ij}$를 나타내는데, DirectLiNGAM이 ICA-LiNGAM에 비해 $y=x$ 위에 산점도가 집중되어 있는 것을 보아 성능이 훨씬 우수한 것을 확인할 수 있다. 특히 sparse한 경우에는 압도적이다.
+Figure 1은 $\mathbf{B}$가 sparse한 경우, Figure 2는 $\mathbf{B}$가 dense한 경우 DirectLiNGAM(좌)와 ICA-LiNGAM(우)의 성능을 보여주고 있다. x축이 실제 $b_{ij}$, y축이 측정된 $b_{ij}$를 나타내는데, DirectLiNGAM이 ICA-LiNGAM에 비해 $y=x$ 위에 산점도가 집중되어 있는 것을 보아 성능이 훨씬 우수한 것을 확인할 수 있다. 특히 sparse한 경우에는 압도적이다.
 
 <p float="left">
   <img src="/assets/images/directlingam-table1.jpg" width="410" />
@@ -79,18 +79,28 @@ $$
   <img src="/assets/images/directlingam-figure8.jpg" width="410" />
 </p>
 
+두 그림을 비교해보면 DirectLiNGAM이 훨씬 더 설득력 있는 network를 보여주고 있다.
 
+## Conclusion
 
+저자는 i) 독립성 검정을 비롯하여 모형의 assumption을 만족하고 있는지 검정할 수 있는 통계적 방법론, ii) 복잡도를 줄일 수 있는 효율적인 알고리즘의 구현, iii) nonlinear relation 등 DirectLiNGAM 알고리즘의 범위 확장, iv) 다양한 데이터셋을 통한 알고리즘 간 비교검증을 후속연구로 남겨두고 있다.
 
+## Appendix A. Adaptive Lasso
 
+Adaptive Lasso는 아래와 같은 손실함수를 최소화하는 $b_{ij}$를 찾는 것이다.
 
+$$
+\left\|x_i-\sum_{k(j)<k(i)}{b_{ij}x_j} \right\|^2+\lambda\sum_{k(j)<k(i)}\frac{\lvert b_{ij} \rvert}{\lvert \hat{b}_{ij} \rvert^\gamma}
+$$
 
+여기서 $\hat{b}_{ij}$는 OLS를 통해 추정한 $b_{ij}$값으로 넣을 것을 권장하고 있고, $\lambda$와 $\gamma$는 tuning parameter이다. $\lambda$를 크게 할수록, $\gamma$를 작게 할수록 $b_{ij}$의 크기에 대한 penalty가 커져 필요없는 edge들이 0으로 사라지게 될 것이다.
 
+***
+
+여기까지 DirectLiNGAM 논문을 살펴보았다. 알고리즘을 보면 복잡도는 커졌지만 로직 자체는 훨씬 더 간단해졌다. 덕분에 빠른 속도로 논문을 소화할 수 있었던 것 같다. 다만 저자가 후속연구로 언급했던 것처럼 아직 통계적 검정이 논의되지 않았다는 점이 논문의 아쉬운 점이 될 것 같다.
 
 ## Reference
 
 * <a href="https://www.jmlr.org/papers/volume12/shimizu11a/shimizu11a.pdf">DirectLiNGAM: A Direct Method for Learning a Linear non-Gaussian Structural Equation Model</a>
 
-* <a href="https://www.sciencedirect.com/science/article/pii/S0893608000000265?casa_token=hsj1ZKquP8sAAAAA:b4YCyZ6n3ynogaMdwUzgiQNOj0IQXbGmWzalkVh9ma2pNt2MVMZOtqvJnbgQQoGVcQOGmeqB0eU">Independent component analysis: algorithms and applications</a>
-
-* <a href="https://www.jmlr.org/papers/volume3/bach02a/bach02a.pdf">Kernel independent component analysis</a>
+* <a href="https://www.tandfonline.com/doi/abs/10.1198/016214506000000735?role=button&needAccess=true&journalCode=uasa20">The Adaptive Lasso and Its Oracle Properties</a>

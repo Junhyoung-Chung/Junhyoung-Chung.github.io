@@ -93,7 +93,7 @@ $$
 \left\|x_i-\sum_{k(j)<k(i)}{b_{ij}x_j} \right\|^2+\lambda\sum_{k(j)<k(i)}\frac{\lvert b_{ij} \rvert}{\lvert \hat{b}_{ij} \rvert^\gamma}
 $$
 
-여기서 $\hat{b}_{ij}$는 OLS를 통해 추정한 $b_{ij}$값으로 넣을 것을 권장하고 있고, $\lambda$와 $\gamma$는 tuning parameter이다. $\lambda$를 크게 할수록, $\gamma$를 작게 할수록 $b_{ij}$의 크기에 대한 penalty가 커져 필요없는 edge들이 0으로 사라지게 될 것이다.
+여기서 $\hat{b}\_{ij}$는 OLS를 통해 추정한 $b_{ij}$값으로 넣을 것을 권장하고 있고, $\lambda$와 $\gamma$는 tuning parameter이다. $\lambda$를 크게 할수록, $\gamma$를 작게 할수록 $b_{ij}$의 크기에 대한 penalty가 커져 필요없는 edge들이 0으로 사라지게 될 것이다.
 
 ***
 
@@ -104,3 +104,5 @@ $$
 * <a href="https://www.jmlr.org/papers/volume12/shimizu11a/shimizu11a.pdf">DirectLiNGAM: A Direct Method for Learning a Linear non-Gaussian Structural Equation Model</a>
 
 * <a href="https://www.tandfonline.com/doi/abs/10.1198/016214506000000735?role=button&needAccess=true&journalCode=uasa20">The Adaptive Lasso and Its Oracle Properties</a>
+
+* <a href="W_oDaNr53PQ">예측할 수 없는 난제라 불리는 물리학 실험.. 충격적인 삼중 진자운동</a>

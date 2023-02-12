@@ -86,7 +86,7 @@ $$
 
 ### Computational Complexity
 
-DirectLiNGAM 알고리즘의 계산 복잡성은 $O(np^3M^2+p^4M^3)$이다. 여기서 $M$은 low-rank decomposition을 통해 구한 maximal rank를 말한다고 한다. 만약 Gram matrices($K_1,K_2$)에 대한 low-rank approximation이 잘 이루어지지 않았다면 $M$이 크게 나타난다고 한다. 반면 기존의 ICA-LiNGAM 알고리즘의 계산복잡성은 $O(np^3+p^4)$d이다. 즉, 기본적으로 DirectLiNGAM 알고리즘이 더 복잡하지만 $M$의 크기에 따라 복잡도가 더욱 커질 수 있다는 문제점이 있기는 하다. 하지만, DirectLiNGAM은 convergence를 보장한다는 측면에서 이러한 단점을 안고갈 만하다고 주장하고 있다.
+DirectLiNGAM 알고리즘의 계산 복잡성은 $O(np^3M^2+p^4M^3)$이다. 여기서 $M$은 low-rank decomposition을 통해 구한 maximal rank를 말한다고 한다. 만약 Gram matrices($K_1,K_2$)에 대한 low-rank approximation이 잘 이루어지지 않았다면 $M$이 크게 나타난다고 한다. 반면 기존의 ICA-LiNGAM 알고리즘의 계산복잡성은 $O(np^3+p^4)$이다. 즉, 기본적으로 DirectLiNGAM 알고리즘이 더 복잡하지만 $M$의 크기에 따라 복잡도가 더욱 커질 수 있다는 문제점이 있기는 하다. 하지만, DirectLiNGAM은 convergence를 보장한다는 측면에서 이러한 단점을 안고갈 만하다고 주장하고 있다.
 
 ### Use of Prior Knowledge
 

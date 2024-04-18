@@ -173,7 +173,7 @@ analytics:
 
   ## Google Analytics
   google:
-    tracking_id : G-XPY4PBYEN8 # Google Analytics id for the site
+    tracking_id : G-CH97FJJG6N # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
 
 

@@ -38,6 +38,10 @@ Junyhoung Chung / 정준형
 
 <center>Seoul National University</center>
 
+<div style="text-align: center">
+<a href="/assets/main.pdf" class="image fit"><img src="images/marr_pic.jpg" alt="">[CV] Last update: 2024.04.18</a>
+</div>
+
 ## Contact
 
 > Email: junhyoung0534 at gmail dot com

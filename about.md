@@ -30,7 +30,7 @@ titles:
 
 <center>
 <span style='font-size:170%;font-weight:bold'>
-Junyhoung Chung / 정준형
+Junhyoung Chung / 정준형
 </span>
 </center>
 

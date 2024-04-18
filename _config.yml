@@ -20,7 +20,7 @@ text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : https://junhyoung-chung.github.io
 baseurl : ''
-title   : JunHyoung
+title   : Junhyoung
 description: > # this means to ignore newlines until "Language & timezone"
   This blog is for recording my personal studying.
 

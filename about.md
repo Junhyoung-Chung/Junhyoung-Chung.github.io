@@ -24,38 +24,44 @@ titles:
   fr-LU   : *FR
   # @end locale config
 ---
-
-!["me"](/assets/images/me.jpg)
+<p style="text-align: center;">
+<img src="assets/images/me2.jpg" width="500">
+</p>
 
 <center>
 <span style='font-size:170%;font-weight:bold'>
-정준형
+Junyhoung Chung / 정준형
 </span>
 </center>
 
-<center>MAJOR : College of Liberal Studies (Economics / Statistics)</center>
+<center>MAJOR : Department of Statistics</center>
 
 <center>Seoul National University</center>
 
 ## Contact
 
-> Email: justin9991@snu.ac.kr
+> Email: junhyoung0534 at gmail dot com
 
 > Github : <a href='https://github.com/Junhyoung-Chung'>https://github.com/Junhyoung-Chung</a>
 
 ## Education
+> M.S. Statistics (Advisor: <a ref="https://sites.google.com/view/gwpark">Gunwoong Park</a>)
+>
+> Mar.2024 ~
+>
+> Department of Statistics, Seoul National University
 
-> Seoul National University
+> B.S. Statistics & B.A. Economics (_**Summa cum laude**_)
 >
-> Mar.2018 ~
+> Mar.2018 ~ Feb.2024
 >
-> 자유전공학부 경제학, 통계학 전공
+> College of Liberal Studies, Seoul National University
 
 ## Interest
 
 * Statistics
   * Causal Inference
-  * Bayesian Statistics
+  * Graphical Model
   
 * Data Science
   * Machine Learning
@@ -75,12 +81,14 @@ __런드리고 요금제 현황 분석 및 유저 행동 패턴에 기반한 최
 
 > 2022.04~2022.06, Growth Hackers ~ 런드리고
 
-## Personal Project
+## Publication
 
-__주식 자동매매 프로그램 개발__
+2024
 
-> 2023.01 ~ See <a href='https://junhyoung-chung.github.io/archive.html?tag=stocks'>Stocks</a>.
+> Junyhoung Chung $\ast$, Donguk Shin, Seyong Hwang, and Gunwoong Park \\
+> Horse Race Rank Prediction Using Learning-to-Rank Approaches \\
+> The Korean Journal of Applied Statistics
 
 ## Skills
 
-* Language: Python, R
+* Language: Python, R, Latex

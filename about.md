@@ -49,7 +49,7 @@ Junhyoung Chung / 정준형
 > Github : <a href='https://github.com/Junhyoung-Chung'>https://github.com/Junhyoung-Chung</a>
 
 ## Education
-> M.S. Statistics (Advisor: <a ref='https://sites.google.com/view/gwpark'>Gunwoong Park</a>)
+> M.S. Statistics (Advisor: <a href='https://sites.google.com/view/gwpark'>Gunwoong Park</a>)
 >
 > Mar.2024 ~
 >
@@ -90,7 +90,7 @@ __런드리고 요금제 현황 분석 및 유저 행동 패턴에 기반한 최
 2024
 
 > Junyhoung Chung $\ast$, Donguk Shin, Seyong Hwang, and Gunwoong Park \\
-> <a ref='https://doi.org/10.5351/KJAS.2024.37.2.239'>Horse Race Rank Prediction Using Learning-to-Rank Approaches</a> \\
+> <a href='https://doi.org/10.5351/KJAS.2024.37.2.239'>Horse Race Rank Prediction Using Learning-to-Rank Approaches</a> \\
 > The Korean Journal of Applied Statistics, 37, 239-253.
 
 

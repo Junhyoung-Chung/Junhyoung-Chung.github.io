@@ -91,7 +91,7 @@ __런드리고 요금제 현황 분석 및 유저 행동 패턴에 기반한 최
 
 > Junyhoung Chung $\ast$, Donguk Shin, Seyong Hwang, and Gunwoong Park \\
 > <a ref="https://doi.org/10.5351/KJAS.2024.37.2.239">Horse Race Rank Prediction Using Learning-to-Rank Approaches</a> \\
-> The Korean Journal of Applied Statistics, 37, 239-253. \\
+> The Korean Journal of Applied Statistics, 37, 239-253.
 
 
 ## Skills

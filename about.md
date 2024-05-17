@@ -39,7 +39,7 @@ Junhyoung Chung / 정준형
 <center>Seoul National University</center>
 
 <div style="text-align: center">
-<a href="/assets/main.pdf" class="image fit"><img src="images/marr_pic.jpg" alt="">[CV] Last update: 2024.04.18</a>
+<a href="/assets/main.pdf" class="image fit"><img src="images/marr_pic.jpg" alt="">[CV] Last update: 2024.05.17</a>
 </div>
 
 ## Contact
@@ -90,8 +90,9 @@ __런드리고 요금제 현황 분석 및 유저 행동 패턴에 기반한 최
 2024
 
 > Junyhoung Chung $\ast$, Donguk Shin, Seyong Hwang, and Gunwoong Park \\
-> Horse Race Rank Prediction Using Learning-to-Rank Approaches \\
-> The Korean Journal of Applied Statistics
+> <a ref="https://doi.org/10.5351/KJAS.2024.37.2.239">Horse Race Rank Prediction Using Learning-to-Rank Approaches</a> \\
+> The Korean Journal of Applied Statistics, 37, 239-253. \\
+
 
 ## Skills
 

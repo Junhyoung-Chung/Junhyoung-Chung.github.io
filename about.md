@@ -39,7 +39,8 @@ Junhyoung Chung / 정준형
 <center>Seoul National University</center>
 
 <div style="text-align: center">
-<a href="/assets/main.pdf" class="image fit"><img src="images/marr_pic.jpg" alt="">[CV] Last update: 2024.05.17</a>
+<!-- <a href="/assets/main.pdf"> class="image fit"><img src="images/marr_pic.jpg" alt="">[CV] Last update: 2024.05.17</a> -->
+<a href="/assets/main.pdf">[CV] Last update: 2024.05.17</a>
 </div>
 
 ## Contact
@@ -92,6 +93,15 @@ __런드리고 요금제 현황 분석 및 유저 행동 패턴에 기반한 최
 > Junyhoung Chung $\ast$, Donguk Shin, Seyong Hwang, and Gunwoong Park \\
 > <a href='https://doi.org/10.5351/KJAS.2024.37.2.239'>Horse Race Rank Prediction Using Learning-to-Rank Approaches</a> \\
 > The Korean Journal of Applied Statistics, 37, 239-253.
+
+## Seminars
+
+2024
+
+> <a href='https://www2.math.kyushu-u.ac.jp/~tsukuda/workshop24/workshop_index.html'>Kyushu University/Seoul National University - Statistics DS workshop</a> \\
+> Presentation : <a href="/assets/DP2.pdf">Learning distribution-free anchored linear structural equation models in the presence of measurement error</a>
+
+> <a href="https://sites.google.com/view/sshimizu06/lab/jss?authuser=0">Seoul-Hikone Joint Seminar series on Causal Inference</a>
 
 
 ## Skills

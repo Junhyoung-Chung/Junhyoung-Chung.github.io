@@ -98,6 +98,9 @@ __런드리고 요금제 현황 분석 및 유저 행동 패턴에 기반한 최
 
 2024
 
+> <a href='/assets/program_2024_final.pdf'>Korea-Japan Joint Symposium of Statiscis and Data Science 2024</a> \\
+> Presentation : <a href='/assets/DP1.pdf'>Discovering causal structures in privacy-protected data: Frugality in anchored Gaussian DAG models</a>
+
 > <a href='https://www2.math.kyushu-u.ac.jp/~tsukuda/workshop24/workshop_index.html'>Kyushu University/Seoul National University - Statistics DS workshop</a> \\
 > Presentation : <a href="/assets/DP2.pdf">Learning distribution-free anchored linear structural equation models in the presence of measurement error</a>
 

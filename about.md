@@ -30,20 +30,20 @@ titles:
 
 <center>
 <span style='font-size:170%;font-weight:bold'>
-Junhyoung Chung / 정준형
+Junhyoung Chung / 정준형[t͡ɕun hjʌŋ t͡ɕʌŋ]
 </span>
 </center>
 
-<center>MAJOR : Department of Statistics</center>
+<center>Department of Statistics</center>
 
 <center>Seoul National University</center>
 
 <div style="text-align: center">
 <!-- <a href="/assets/main.pdf"> class="image fit"><img src="images/marr_pic.jpg" alt="">[CV] Last update: 2024.05.17</a> -->
-<a href="/assets/main.pdf">[CV] Last update: 2024.11.03</a>
+<a href="/assets/main.pdf">[CV] Last update: 2025.01.06</a>
 </div>
 
-## Contact
+<!-- ## Contact
 
 > Email: junhyoung0534 at gmail dot com
 
@@ -62,16 +62,6 @@ Junhyoung Chung / 정준형
 >
 > College of Liberal Studies, Seoul National University
 
-## Interest
-
-* Statistics
-  * Causal Inference
-  * Graphical Model
-  
-* Data Science
-  * Machine Learning
-  * Deep Learning
-
 ## Industrial Project
 
 __강남언니 CARD/TITLE/CONTENTS 이미지 정보 추출 및 현황 분석에 기반한 이미지 분류체계 제안__ (Project Manager)
@@ -89,10 +79,14 @@ __런드리고 요금제 현황 분석 및 유저 행동 패턴에 기반한 최
 ## Publication
 
 2024
+> Junyhoung Chung$^\ast$, Youngmin Ahn, Donguk Shin, and Gunwoong Park \\
+> <a href='https://doi.org/10.1007/s42952-024-00298-9'>Learning distribution-free anchored linear structural equation models in the presence of measurement error</a> \\
+> Journal of the Korean Statistical Society, 1-25
 
-> Junyhoung Chung $\ast$, Donguk Shin, Seyong Hwang, and Gunwoong Park \\
+
+> Junyhoung Chung$^\ast$, Donguk Shin, Seyong Hwang, and Gunwoong Park \\
 > <a href='https://doi.org/10.5351/KJAS.2024.37.2.239'>Horse Race Rank Prediction Using Learning-to-Rank Approaches</a> \\
-> The Korean Journal of Applied Statistics, 37, 239-253.
+> The Korean Journal of Applied Statistics, 37, 239-253
 
 ## Seminars
 
@@ -109,4 +103,4 @@ __런드리고 요금제 현황 분석 및 유저 행동 패턴에 기반한 최
 
 ## Skills
 
-* Language: Python, R, Latex
+* Language: Python, R, Latex -->

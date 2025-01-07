@@ -266,6 +266,7 @@ GEM
       tzinfo (>= 1.0.0)
     unicode-display_width (1.8.0)
     uri (1.0.2)
+    webrick (1.9.1)
 
 PLATFORMS
   arm64-darwin-22
@@ -277,6 +278,7 @@ DEPENDENCIES
   jekyll-text-theme!
   rake (~> 10.0)
   tzinfo-data
+  webrick
 
 BUNDLED WITH
    2.4.4

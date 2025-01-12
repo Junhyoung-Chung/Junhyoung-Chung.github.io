@@ -33,22 +33,22 @@ This study aims to establish identifiability in distribution-free anchored linea
 
 ```mermaid
 graph TD;
-    %% Node Definitions
-    X1["X₁"]
-    X2["X₂"]
-    X3["X₃"]
-    Z1["Z₁"]
-    Z2["Z₂"]
-    Z3["Z₃"]
+%% Node Definitions
+X1["X₁"]
+X2["X₂"]
+X3["X₃"]
+Z1["Z₁"]
+Z2["Z₂"]
+Z3["Z₃"]
 
-    %% Edges between Latent Variables
-    X1 --> X2;
-    X2 --> X3;
+%% Edges between Latent Variables
+X1 --> X2;
+X2 --> X3;
 
-    %% Edges between Latent and Observed Variables
-    X1 -->|f₁| Z1;
-    X2 -->|f₂| Z2;
-    X3 -->|f₃| Z3;
+%% Edges between Latent and Observed Variables
+X1 -->|f₁| Z1;
+X2 -->|f₂| Z2;
+X3 -->|f₃| Z3
 ```
 
 * The above figure visualizes the relationship between the latent variables $X$ and the observed variables $Z$.
@@ -58,18 +58,18 @@ graph TD;
 
 ```mermaid
 graph LR;
-    %% Node Definitions
-    1["1"];
-    2["2"];
-    3["3"];
-    4["4"];
-    5["5"];
+%% Node Definitions
+1["1"];
+2["2"];
+3["3"];
+4["4"];
+5["5"];
 
-    %% Edges between Nodes
-    1 --> 2;
-    2 --> 3;
-    4 --> 3;
-    4 --> 5;
+%% Edges between Nodes
+1 --> 2;
+2 --> 3;
+4 --> 3;
+4 --> 5
 ```
 
 ### Directed acyclic graph

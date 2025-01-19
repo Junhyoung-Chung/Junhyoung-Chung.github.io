@@ -40,7 +40,7 @@ Junhyoung Chung / 정준형[t͡ɕʌŋ t͡ɕun hjʌŋ]
 
 <div style="text-align: center">
 <!-- <a href="/assets/main.pdf"> class="image fit"><img src="images/marr_pic.jpg" alt="">[CV] Last update: 2024.05.17</a> -->
-<a href="/assets/main.pdf">[CV] Last update: 2025.01.07</a>
+<a href="/assets/main.pdf">[CV] Last update: 2025.01.19</a>
 </div>
 
 <!-- ## Contact

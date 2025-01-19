@@ -349,3 +349,7 @@ $$
 * The precision for each rank was calculated on a new dataset from Jul 2023 - Nov 2023.
 * Relatively high accuracy was observed for the 1st, 2nd, and 8th ranks, but the precision declined for ranks in between.
 * Future research could explore methodologies specifically designed to improve accuracy for predicting mid-level ranks.
+
+# Reference
+
+* Chung, J., Shin, D., Hwang, S., & Park, G. (2024). Horse race rank prediction using learning-to-rank approaches. Korean Journal of Applied Statistics, 37(2), 239-253.

@@ -53,7 +53,7 @@ header:
 
   - titles:
       # @start locale config
-      en      : &EN       Google Scholar
+      en      : &EN       Publications
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
@@ -65,7 +65,7 @@ header:
       zh-Hant : &ZH_HANT  
       zh-TW   : *ZH_HANT
       zh-HK   : *ZH_HANT
-      ko      : &KO       구글 스칼라
+      ko      : &KO       출판
       ko-KR   : *KO
       fr      : &FR       
       fr-BE   : *FR
@@ -75,33 +75,7 @@ header:
       fr-LU   : *FR
       tr      : &TR       
       # @end locale config
-    url: https://scholar.google.com/citations?user=AuQ5vRMAAAAJ
-
-  - titles:
-      # @start locale config
-      en      : &EN       Github
-      en-GB   : *EN
-      en-US   : *EN
-      en-CA   : *EN
-      en-AU   : *EN
-      zh-Hans : &ZH_HANS 
-      zh      : *ZH_HANS
-      zh-CN   : *ZH_HANS
-      zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  
-      zh-TW   : *ZH_HANT
-      zh-HK   : *ZH_HANT
-      ko      : &KO       깃헙
-      ko-KR   : *KO
-      fr      : &FR       
-      fr-BE   : *FR
-      fr-CA   : *FR
-      fr-CH   : *FR
-      fr-FR   : *FR
-      fr-LU   : *FR
-      tr      : &TR       
-      # @end locale config
-    url: https://github.com/Junhyoung-Chung
+    url: /publication.html
 
   - titles:
       # @start locale config
@@ -128,3 +102,55 @@ header:
       tr      : &TR       Hakkında
       # @end locale config
     url: /about.html
+
+  # - titles:
+  #     # @start locale config
+  #     en      : &EN       Google Scholar
+  #     en-GB   : *EN
+  #     en-US   : *EN
+  #     en-CA   : *EN
+  #     en-AU   : *EN
+  #     zh-Hans : &ZH_HANS 
+  #     zh      : *ZH_HANS
+  #     zh-CN   : *ZH_HANS
+  #     zh-SG   : *ZH_HANS
+  #     zh-Hant : &ZH_HANT  
+  #     zh-TW   : *ZH_HANT
+  #     zh-HK   : *ZH_HANT
+  #     ko      : &KO       구글 스칼라
+  #     ko-KR   : *KO
+  #     fr      : &FR       
+  #     fr-BE   : *FR
+  #     fr-CA   : *FR
+  #     fr-CH   : *FR
+  #     fr-FR   : *FR
+  #     fr-LU   : *FR
+  #     tr      : &TR       
+  #     # @end locale config
+  #   url: https://scholar.google.com/citations?user=AuQ5vRMAAAAJ
+
+  # - titles:
+  #     # @start locale config
+  #     en      : &EN       Github
+  #     en-GB   : *EN
+  #     en-US   : *EN
+  #     en-CA   : *EN
+  #     en-AU   : *EN
+  #     zh-Hans : &ZH_HANS 
+  #     zh      : *ZH_HANS
+  #     zh-CN   : *ZH_HANS
+  #     zh-SG   : *ZH_HANS
+  #     zh-Hant : &ZH_HANT  
+  #     zh-TW   : *ZH_HANT
+  #     zh-HK   : *ZH_HANT
+  #     ko      : &KO       깃헙
+  #     ko-KR   : *KO
+  #     fr      : &FR       
+  #     fr-BE   : *FR
+  #     fr-CA   : *FR
+  #     fr-CH   : *FR
+  #     fr-FR   : *FR
+  #     fr-LU   : *FR
+  #     tr      : &TR       
+  #     # @end locale config
+  #   url: https://github.com/Junhyoung-Chung

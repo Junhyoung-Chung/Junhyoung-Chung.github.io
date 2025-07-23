@@ -271,10 +271,3 @@ This study aims to establish an identifiability in **distribution-free anchored 
 # References
 
 * Chung, J., Ahn, Y., Shin, D., & Park, G. (2024). Learning distribution-free anchored linear structural equation models in the presence of measurement error. Journal of the Korean Statistical Society, 1-25.
-* Halpern, Y., Horng, S., & Sontag, D. (2015). Anchored discrete factor analysis. arXiv preprint arXiv:1511.03299.
-* Liu, Y., Constantinou, A. C., & Guo, Z. (2022). Improving Bayesian network structure learning in the presence of measurement error. Journal of Machine Learning Research, 23(324), 1-28.
-* Peters, J., & Bühlmann, P. (2014). Identifiability of Gaussian structural equation models with equal error variances. Biometrika, 101(1), 219-228.
-* Saeed, B., Belyaeva, A., Wang, Y., & Uhler, C. (2020). Anchored causal inference in the presence of measurement error. In Conference on uncertainty in artificial intelligence (pp. 619-628). PMLR.
-* Shimizu, S., Hoyer, P. O., Hyvärinen, A., Kerminen, A., & Jordan, M. (2006). A linear non-Gaussian acyclic model for causal discovery. Journal of Machine Learning Research, 7(10).
-* Zhang, K., Gong, M., Ramsey, J., Batmanghelich, K., Spirtes, P., & Glymour, C. (2017). Causal discovery in the presence of measurement error: Identifiability conditions. arXiv preprint arXiv:1706.03768.
-* Zhang, K., Gong, M., Ramsey, J. D., Batmanghelich, K., Spirtes, P., & Glymour, C. (2018). Causal Discovery with Linear Non-Gaussian Models under Measurement Error: Structural Identifiability Results. In UAI (pp. 1063-1072).

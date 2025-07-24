@@ -187,3 +187,59 @@ input {
 ::-webkit-scrollbar-track:horizontal{
   background-color: #fc4d50; // 가로 스크롤바 색상
 }
+
+/* 3. Details 자체를 inline-block+relative로 */
+.link-toggle {
+  display: inline-block;
+  position: relative;       /* toggle-content 절대 위치 기준 */
+  margin: 0;                /* 불필요한 마진 제거 */
+}
+
+/* 4. Summary(토글용) 기본 스타일: 언더라인 없음 */
+.link-toggle summary {
+  all: unset;               /* marker, block 속성 초기화 */
+  display: inline;
+  cursor: pointer;
+  color: $main-color-1;
+  font-weight: bold;
+  white-space: nowrap;
+  text-decoration: none;    /* 기본엔 언더라인 없애기 */
+}
+
+/* 5. Hover/Focus 시만 언더라인 */
+.link-toggle summary:hover {
+  text-decoration: underline;
+  outline: none;
+}
+// .link-toggle summary:focus {
+//   text-decoration: underline;
+//   outline: none;
+// }
+
+/* 6. 화살표(marker) 제거 */
+.link-toggle summary::-webkit-details-marker { display: none; }
+.link-toggle summary::marker               { content: none; }
+
+/* ── 7) 토글된 콘텐츠: 일반 본문처럼 ── */
+.link-toggle .toggle-content {
+  display: block;           /* block 레벨로 보이기 */
+  margin-top: 0.5rem;       /* summary 바로 밑 여백 */
+  /* 배경, 패딩, 그림자 모두 제거 */
+  /* 1. 폰트 패밀리 지정 */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+
+  /* 2. 기본 글자크기 및 줄간격 */
+  font-size: 1rem;        /* 16px 기준 */
+  line-height: 1.8;       /* 약간 넉넉한 줄간격 */
+
+  /* 3. 글자색 */
+  color: $text-color-theme-light-l;         /* 짙은 회색으로 부드럽게 */
+
+  /* 4. 글자 두께, 스타일 */
+  font-weight: 400;       /* normal (300~700) */
+  font-style: normal;     
+
+  /* 5. 추가 옵션 (원하시면) */
+  letter-spacing: 0.02em; /* 자간 약간 벌림 */
+  text-align: justify;    /* 양쪽 정렬 */
+}

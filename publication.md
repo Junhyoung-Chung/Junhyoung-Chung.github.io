@@ -75,7 +75,7 @@ titles:
 
 * Joonho Shin<sup>&dagger;</sup>, _**Junhyoung Chung**_<sup>&dagger;</sup>, Seyong Hwang<sup>&dagger;</sup>, Gunwoong Park<sup>&dagger;</sup> \\
   Discovering causal structures in corrupted data: Frugality in anchored Gaussian DAG models \\
-  In revision for *Computational Statistics and Data Analysis* \\
+  Under minor revision for *Computational Statistics and Data Analysis* \\
   <details class="link-toggle">
     <summary>[Abstract]</summary>
     <div class="toggle-content">

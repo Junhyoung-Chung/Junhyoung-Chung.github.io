@@ -59,23 +59,9 @@ titles:
 
 ## Accepted papers
 
-* _**Junhyoung Chung**_<sup>\*</sup>, Sungjin Lee, Gunwoong Park \\
-  Prediction of high-risk mountain accident areas using a Hurdle model (*Written in Korean*) \\
-  Accepted in *Korean Journal of Applied Statistics* \\
-  <details class="link-toggle">
-    <summary>[Abstract]</summary>
-    <div class="toggle-content">
-      <!-- 여기에 초록 내용 -->
-      This study predicts the average $6$-hourly number of mountain accidents using data from 18 mountainous national parks in Korea, including Jirisan, Seoraksan, and Sobaeksan. Specifically, to achieve both fine-grained prediction and identify important variables, we divide mountain regions into grids, enabling risk prediction at both the mountain level and the specific grid level. Additionally, a Hurdle model is applied to address zero-inflated data, as mountain accidents often do not occur in many regions due to sparse population or generally safe areas. The Hurdle model is implemented via a generalized linear model, random forest, and gradient boosting decision trees (XGBoost, LightGBM, and CatBoost). An extensive exploratory data analysis is also conducted to enhance prediction accuracy and validate our analytic approach. Through a feature importance analysis, we find that climate-related variables are important for predicting the probability of an accident, while geological factors (slope and elevation) and temporal information are key contributors to modeling the count of accidents.
-    </div>
-    <br/>
-  </details>
-
-## On-going works
-
 * Joonho Shin<sup>&dagger;</sup>, _**Junhyoung Chung**_<sup>&dagger;</sup>, Seyong Hwang<sup>&dagger;</sup>, Gunwoong Park<sup>&dagger;</sup> \\
   Discovering causal structures in corrupted data: Frugality in anchored Gaussian DAG models \\
-  Under minor revision for *Computational Statistics and Data Analysis* \\
+  Accepted in *Computational Statistics and Data Analysis* \\
   <details class="link-toggle">
     <summary>[Abstract]</summary>
     <div class="toggle-content">
@@ -88,3 +74,16 @@ titles:
     <br/>
   </details>
 
+* _**Junhyoung Chung**_<sup>\*</sup>, Sungjin Lee, Gunwoong Park \\
+  Prediction of high-risk mountain accident areas using a Hurdle model (*Written in Korean*) \\
+  Accepted in *Korean Journal of Applied Statistics* \\
+  <details class="link-toggle">
+    <summary>[Abstract]</summary>
+    <div class="toggle-content">
+      <!-- 여기에 초록 내용 -->
+      This study predicts the average $6$-hourly number of mountain accidents using data from 18 mountainous national parks in Korea, including Jirisan, Seoraksan, and Sobaeksan. Specifically, to achieve both fine-grained prediction and identify important variables, we divide mountain regions into grids, enabling risk prediction at both the mountain level and the specific grid level. Additionally, a Hurdle model is applied to address zero-inflated data, as mountain accidents often do not occur in many regions due to sparse population or generally safe areas. The Hurdle model is implemented via a generalized linear model, random forest, and gradient boosting decision trees (XGBoost, LightGBM, and CatBoost). An extensive exploratory data analysis is also conducted to enhance prediction accuracy and validate our analytic approach. Through a feature importance analysis, we find that climate-related variables are important for predicting the probability of an accident, while geological factors (slope and elevation) and temporal information are key contributors to modeling the count of accidents.
+    </div>
+    <br/>
+  </details>
+
+<!-- ## On-going works -->

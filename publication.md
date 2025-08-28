@@ -29,6 +29,20 @@ titles:
 
 ## Published papers
 
+### 2025
+
+* Joonho Shin<sup>&dagger;</sup>, _**Junhyoung Chung**_<sup>&dagger;</sup>, Seyong Hwang<sup>&dagger;</sup>, Gunwoong Park<sup>&dagger;</sup> \\
+  Discovering causal structures in corrupted data: Frugality in anchored Gaussian DAG models \\
+  In *Computational Statistics and Data Analysis, 213*, 108267, [<u>10.1016/j.csda.2025.108267</u>](https://doi.org/10.1016/j.csda.2025.108267) \\
+  <details class="link-toggle">
+    <summary>[Abstract]</summary>
+    <div class="toggle-content">
+      <!-- 여기에 초록 내용 -->
+      This study focuses on the recovery of anchored Gaussian directed acyclic graphical (DAG) models to address the challenge of discovering causal or directed relationships among variables in datasets that are either intentionally masked or contaminated due to measurement errors. A main contribution is to relax the existing restrictive identifiability conditions for anchored Gaussian DAG models by introducing the anchored-frugality assumption. This assumption posits that the true graph is the most frugal among those satisfying the possible distributions of the latent and observed variables, thereby making the true Markov equivalent class (MEC) identifiable. The validity of the anchored-frugality assumption is justified using both graph and probability theories, respectively. Another main contribution is the development of the anchored-SP and frugal-PC algorithms. Specifically, the anchored-SP algorithm finds the most frugal graph among all possible graphs satisfying the Markov condition while the frugal-PC algorithm finds the most frugal graph among some graphs. Hence, the frugal-PC algorithm is more computationally feasible, while it requires an additional frugality-faithfulness assumption for soundness. Various simulations support the theoretical findings of this study and demonstrate the practical effectiveness of the proposed algorithm against state-of-the-art algorithms such as ACI, PC, and MMHC. Furthermore, the applications of the proposed algorithm to protein signaling data and breast cancer data illustrate its effectiveness in uncovering relationships among proteins and among cancer-related cell nuclei characteristics.
+    </div>
+    <br/>
+  </details>
+
 ### 2024
 
 * _**Junhyoung Chung**_<sup>\*</sup>, Youngmin Ahn, Donguk Shin, Gunwoong Park [\[Summary\]](/2025/01/19/Learning-distribution-free-anchored-linear-structural-equation-models-in-the-presence-of-measurement-error.html) \\
@@ -58,21 +72,6 @@ titles:
   
 
 ## Accepted papers
-
-* Joonho Shin<sup>&dagger;</sup>, _**Junhyoung Chung**_<sup>&dagger;</sup>, Seyong Hwang<sup>&dagger;</sup>, Gunwoong Park<sup>&dagger;</sup> \\
-  Discovering causal structures in corrupted data: Frugality in anchored Gaussian DAG models \\
-  Accepted in *Computational Statistics and Data Analysis* \\
-  <details class="link-toggle">
-    <summary>[Abstract]</summary>
-    <div class="toggle-content">
-      <!-- 여기에 초록 내용 -->
-      This study focuses on the recovery of anchored Gaussian directed acyclic graphical (DAG) models to address the challenge of discovering causal or directed relationships among variables in datasets that are either intentionally masked or contaminated due to measurement errors.	
-      A main contribution is to relax the existing restrictive identifiability conditions for anchored Gaussian DAG models by introducing the anchored-frugality assumption. This assumption posits that the true graph is the most frugal among those satisfying the possible distributions of the latent and observed variables, thereby making the true Markov equivalent class (MEC) identifiable. The validity of the anchored-frugality assumption is justified using both graph and probability theories, respectively. 
-      Another main contribution is the development of the anchored-SP and frugal-PC algorithms. Specifically, the anchored-SP algorithm finds the most frugal graph among all possible graphs satisfying the Markov condition while the frugal-PC algorithm finds the most frugal graph among some graphs. Hence, the frugal-PC algorithm is more computationally feasible, while it requires an additional frugality-faithfulness assumption for soundness.
-      Various simulations support the theoretical findings of this study and demonstrate the practical effectiveness of the proposed algorithm against state-of-the-art algorithms such as ACI, PC, and MMHC. Furthermore, the applications of the proposed algorithm to protein signaling data and breast cancer data illustrate its effectiveness in uncovering relationships among proteins and among cancer-related cell nuclei characteristics.
-    </div>
-    <br/>
-  </details>
 
 * _**Junhyoung Chung**_<sup>\*</sup>, Sungjin Lee, Gunwoong Park \\
   Prediction of high-risk mountain accident areas using a Hurdle model (*Written in Korean*) \\

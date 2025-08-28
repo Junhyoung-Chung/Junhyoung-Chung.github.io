@@ -201,7 +201,7 @@ exclude:
   - /screenshots
   - /test
   - /vendor
-  - /index.html
+  # - /index.html
 
 defaults:
   ## home

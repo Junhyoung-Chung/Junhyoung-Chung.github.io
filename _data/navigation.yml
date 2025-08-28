@@ -79,21 +79,21 @@ header:
 
   - titles:
       # @start locale config
-      en      : &EN       About
+      en      : &EN       CV
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      zh-Hans : &ZH_HANS  关于
+      zh-Hans : &ZH_HANS  CV
       zh      : *ZH_HANS
       zh-CN   : *ZH_HANS
       zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  關於
+      zh-Hant : &ZH_HANT  CV
       zh-TW   : *ZH_HANT
       zh-HK   : *ZH_HANT
-      ko      : &KO       소개
+      ko      : &KO       CV
       ko-KR   : *KO
-      fr      : &FR       À propos
+      fr      : &FR       CV
       fr-BE   : *FR
       fr-CA   : *FR
       fr-CH   : *FR
@@ -101,7 +101,7 @@ header:
       fr-LU   : *FR
       tr      : &TR       Hakkında
       # @end locale config
-    url: /about/
+    url: /assets/CV.pdf
 
   # - titles:
   #     # @start locale config

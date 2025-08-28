@@ -127,6 +127,11 @@ h6 {
   }
 }
 
+hr {
+    border: none;
+    @include horizontal-rules(); 
+  }
+
 a {
   font-weight: map-get($base, font-weight-bold);
   @include link-colors($main-color-1);
@@ -242,4 +247,34 @@ input {
   /* 5. 추가 옵션 (원하시면) */
   letter-spacing: 0.02em; /* 자간 약간 벌림 */
   text-align: justify;    /* 양쪽 정렬 */
+}
+
+.profile-container {
+  display: flex; /* 자식 요소들을 가로로 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 30px; /* 사진과 텍스트 사이 간격 */
+  margin-bottom: 10px; /* 프로필 섹션 전체의 아래쪽 여백 */
+  flex-wrap: wrap; /* 화면이 작아지면 텍스트가 사진 아래로 내려가도록 설정 */
+}
+.profile-photo img {
+  width: 200px; /* 사진 너비 */
+  height: 200px; /* 사진 높이 */
+  border-radius: 50%; /* 사진을 원형으로 만듦 */
+  object-fit: cover; /* 사진 비율을 유지하며 채움 */
+}
+.profile-info {
+  text-align: left; /* 텍스트를 왼쪽 정렬 */
+}
+.profile-info .name {
+  font-size: 170%;
+  font-weight: bold;
+  margin: 0 0 10px 0; /* 이름 아래에만 여백을 줌 */
+}
+.profile-info .affiliation {
+  margin: 4px 0; /* 소속 정보의 위아래 여백 */
+  font-size: 1.1em;
+}
+.profile-info .cv-link {
+  display: inline-block;
+  margin-top: 15px; /* CV 링크 위쪽 여백 */
 }

@@ -6,6 +6,22 @@ layout: page
 
 <hr>
 
+<h2 style = "border-bottom: 2px solid #eee;">In-press</h2>
+
+<p style="margin-bottom: 5px;">
+  <em><strong>Junhyoung Chung</strong></em><sup>*</sup>, Sungjin Lee, Gunwoong Park <br />
+  Prediction of high-risk mountain accident areas using a Hurdle model (<em>Written in Korean</em>) <br />
+  Accepted in <em>Korean Journal of Applied Statistics</em>
+</p>
+<details class="link-toggle" style="margin-top: 0;">
+  <summary>[Abstract]</summary>
+  <div class="toggle-content">
+    This study predicts the average $6$-hourly number of mountain accidents using data from 18 mountainous national parks in Korea, including Jirisan, Seoraksan, and Sobaeksan. Specifically, to achieve both fine-grained prediction and identify important variables, we divide mountain regions into grids, enabling risk prediction at both the mountain level and the specific grid level. Additionally, a Hurdle model is applied to address zero-inflated data, as mountain accidents often do not occur in many regions due to sparse population or generally safe areas. The Hurdle model is implemented via a generalized linear model, random forest, and gradient boosting decision trees (XGBoost, LightGBM, and CatBoost). An extensive exploratory data analysis is also conducted to enhance prediction accuracy and validate our analytic approach. Through a feature importance analysis, we find that climate-related variables are important for predicting the probability of an accident, while geological factors (slope and elevation) and temporal information are key contributors to modeling the count of accidents.
+  </div>
+</details>
+
+<hr>
+
 <h2 style = "border-bottom: 2px solid #eee;">Published papers</h2>
 
 <h3>2025</h3>
@@ -48,21 +64,5 @@ layout: page
   <div class="toggle-content">
     This research applies both point-wise and pair-wise learning strategies within the learning-to-rank (LTR)
     framework to predict horse race rankings in Seoul. Specifically, for point-wise learning, we employ a linear model and random forest. In contrast, for pair-wise learning, we utilize tools such as RankNet, and LambdaMART (XGBoost Ranker, LightGBM Ranker, and CatBoost Ranker). Furthermore, to enhance predictions, race records are standardized based on race distance, and we integrate various datasets, including race information, jockey information, horse training records, and trainer information. Our results empirically demonstrate that pair-wise learning approaches that can reflect the order information between items generally outperform point-wise learning approaches. Notably, CatBoost Ranker is the top performer. Through Shapley value analysis, we identified that the important variables for CatBoost Ranker include the performance of a horse, its previous race records, the count of its starting trainings, the total number of starting trainings, and the instances of disease diagnoses for the horse.
-  </div>
-</details>
-
-<hr>
-
-<h2 style = "border-bottom: 2px solid #eee;">Accepted papers</h2>
-
-<p style="margin-bottom: 5px;">
-  <em><strong>Junhyoung Chung</strong></em><sup>*</sup>, Sungjin Lee, Gunwoong Park <br />
-  Prediction of high-risk mountain accident areas using a Hurdle model (<em>Written in Korean</em>) <br />
-  Accepted in <em>Korean Journal of Applied Statistics</em>
-</p>
-<details class="link-toggle" style="margin-top: 0;">
-  <summary>[Abstract]</summary>
-  <div class="toggle-content">
-    This study predicts the average $6$-hourly number of mountain accidents using data from 18 mountainous national parks in Korea, including Jirisan, Seoraksan, and Sobaeksan. Specifically, to achieve both fine-grained prediction and identify important variables, we divide mountain regions into grids, enabling risk prediction at both the mountain level and the specific grid level. Additionally, a Hurdle model is applied to address zero-inflated data, as mountain accidents often do not occur in many regions due to sparse population or generally safe areas. The Hurdle model is implemented via a generalized linear model, random forest, and gradient boosting decision trees (XGBoost, LightGBM, and CatBoost). An extensive exploratory data analysis is also conducted to enhance prediction accuracy and validate our analytic approach. Through a feature importance analysis, we find that climate-related variables are important for predicting the probability of an accident, while geological factors (slope and elevation) and temporal information are key contributors to modeling the count of accidents.
   </div>
 </details>

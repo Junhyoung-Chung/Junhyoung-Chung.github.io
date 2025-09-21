@@ -17,8 +17,8 @@ This study aims to establish an identifiability in **distribution-free anchored 
 # Contributions
 
 * Establishes an identifiability condition of distribution-free anchored linear SEMs based on the **geometry-faithfulness** assumption.
-* Proposes a consistent learning algorithm to discover a latent structure in the presence of measurement error.
-* Provides various numerical experiments and analysis of real galaxy data.
+* Proposes a **consistent learning algorithm** to discover a latent structure in the presence of measurement error.
+* Provides **various numerical experiments and analysis of real galaxy data**.
 
 # Introduction
 
@@ -67,7 +67,7 @@ This study aims to establish an identifiability in **distribution-free anchored 
 
   where each $\epsilon_j$ is an independent, but possibly not identical error with mean $0$ and variance $\sigma_j^2$.
 
-* The above The linear SEM can be restated as a matrix form:
+* The above linear SEM can be restated as a matrix form:
 
   $$
   X = BX + \epsilon .
@@ -271,3 +271,6 @@ This study aims to establish an identifiability in **distribution-free anchored 
 # References
 
 * Chung, J., Ahn, Y., Shin, D., & Park, G. (2024). Learning distribution-free anchored linear structural equation models in the presence of measurement error. Journal of the Korean Statistical Society, 1-25.
+* Peters, J., & Bühlmann, P. (2014). Identifiability of Gaussian structural equation models with equal error variances. Biometrika, 101(1), 219-228.
+* Saeed, B., Belyaeva, A., Wang, Y., & Uhler, C. (2020). Anchored causal inference in the presence of measurement error. In Conference on uncertainty in artificial intelligence (pp. 619-628). PMLR.
+* Shimizu, S., Hoyer, P. O., Hyvärinen, A., Kerminen, A., & Jordan, M. (2006). A linear non-Gaussian acyclic model for causal discovery. Journal of Machine Learning Research, 7(10).

@@ -203,7 +203,7 @@ This study aims to establish an identifiability in **distribution-free anchored 
 
 ## Experiment settings
 
-* The simulation study was conducted by generating $100$ instacnes of random (i) dropout models, and (ii) additive measurement error models.
+* The simulation study was conducted by generating $100$ instances of random (i) dropout models, and (ii) additive measurement error models.
   * For dropout models, the non-zero probability was uniformly set at $\gamma = 0.9$.
   * For additive measurement error models, the variance of the measurement error was set at $\eta^2 = 0.25$.
 * In terms of error distributions, four sets of noise distributions were considered:
@@ -219,12 +219,12 @@ This study aims to establish an identifiability in **distribution-free anchored 
 ## Dropout models
 
 <div style="text-align: center;">
-    <img src="/assets/images/anchored-distribution-free-dropout-models-results1.png" alt="Figure 2" width="80%">
+    <img src="/assets/images/anchored-distribution-free-dropout-models-results1.png" alt="Figure 2" width="100%">
     <p><strong>Figure 2:</strong> Comparison of the proposed algorithm to the PC-Fisher, PC-HSIC, PC-Oracle, and GES-Oracle algorithms with the first set of error distribution</p>
 </div>
 
 <!-- <div style="text-align: center;">
-    <img src="/assets/images/anchored-distribution-free-dropout-models-results2.png" alt="Figure 3" width="80%">
+    <img src="/assets/images/anchored-distribution-free-dropout-models-results2.png" alt="Figure 3" width="100%">
     <p><strong>Figure 3:</strong> Comparison of the proposed algorithm to the PC-Fisher, PC-HSIC, PC-Oracle, and GES-Oracle algorithms in terms of $5$-node graph recovery rates for the dropout models with Gamma, Weibull, and Gaussian error distributions</p>
 </div> -->
 
@@ -234,12 +234,12 @@ This study aims to establish an identifiability in **distribution-free anchored 
 ## Additive measurement error models
 
 <div style="text-align: center;">
-    <img src="/assets/images/anchored-distribution-free-additive-models-results1.png" alt="Figure 3" width="80%">
+    <img src="/assets/images/anchored-distribution-free-additive-models-results1.png" alt="Figure 3" width="100%">
     <p><strong>Figure 3:</strong> Comparison of the proposed algorithm to the PC-Fisher, PC-HSIC, PC-Oracle, and GES-Oracle algorithms with the first set of error distribution</p>
 </div>
 
 <!-- <div style="text-align: center;">
-    <img src="/assets/images/anchored-distribution-free-additive-models-results2.png" alt="Figure 3" width="80%">
+    <img src="/assets/images/anchored-distribution-free-additive-models-results2.png" alt="Figure 3" width="100%">
     <p><strong>Figure 5:</strong> Comparison of the proposed algorithm to the PC-Fisher, PC-HSIC, PC-Oracle, and GES-Oracle algorithms in terms of $5$-node graph recovery rates for the additive measurement error models with Gamma, Weibull, and Gaussian error distributions</p>
 </div> -->
 
@@ -258,7 +258,7 @@ This study aims to establish an identifiability in **distribution-free anchored 
             <figcaption style="font-size: 16px; margin-top: 10px;">(b) Proposed CPDAG</figcaption>
         </figure>
     </div>
-    <div style="text-align: center; font-size: 18px; margin-top: 20px;">
+    <div style="text-align: center; margin-top: 20px;">
         <strong>Figure 4:</strong> Comparison between the true CPDAG and the estimated CPDAG by the proposed algorithm.
     </div>
 </div>

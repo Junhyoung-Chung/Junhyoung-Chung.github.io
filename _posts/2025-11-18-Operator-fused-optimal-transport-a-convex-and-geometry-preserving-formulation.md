@@ -68,7 +68,7 @@ To the best of our knowledge, this is the first **convex formulation** for geome
 >
 >We also define $K_{\mathcal{Y}}(y,y')$ analogously.
 
-* While there are many possible forms for $\kappa$, it suffices to use the identity function, i.e., $K_{\mathcal{X}}(x,x^\prime) = d_{\mathcal{X}}(x,x')$ in practice.
+* While there are many possible choices for $\kappa$, it suffices to use the identity function, i.e., $K_{\mathcal{X}}(x,x^\prime) = d_{\mathcal{X}}(x,x')$ in practice.
 
 **Definition 2 (Distance potential operator).**
 >Let $(\mathcal{X},d\_{\mathcal{X}},\mathbb{P}\_X)$ be a compact metric-measure space. The *distance potential operator* $D\_{\mathbb{P}\_X}^{\kappa} : L^2(\mathcal{X},\mathbb{P}\_X) \to L^2(\mathcal{X},\mathbb{P}\_X)$ is an integral operator defined by

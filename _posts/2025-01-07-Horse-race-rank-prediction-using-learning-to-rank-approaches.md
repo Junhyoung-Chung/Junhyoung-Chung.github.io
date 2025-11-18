@@ -4,7 +4,7 @@ tags:
     - Research summary
 ---
 
-This post is the summary of <a href="https://koreascience.kr/article/JAKO202414143309228.pdf">Chung, J., Shin, D., Hwang, S., & Park, G. (2024). Horse race rank prediction using learning-to-rank approaches. Korean Journal of Applied Statistics, 37(2), 239-253.</a>
+This post is the summary of <a href="https://www.kjas.or.kr/journal/view.html?uid=135&vmd=Full&">Chung, J., Shin, D., Hwang, S., & Park, G. (2024). Horse race rank prediction using learning-to-rank approaches. Korean Journal of Applied Statistics, 37(2), 239-253.</a>
 
 <!--more-->
 

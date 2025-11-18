@@ -304,9 +304,4 @@ This study aims to provide a grid-based Hurdle model to predict the average 6-ho
 
 # References
 
-* Chung, J., Ahn, Y., Shin, D., & Park, G. (2024). Learning distribution-free anchored linear structural equation models in the presence of measurement error. Journal of the Korean Statistical Society, 1-25.
-* Raskutti, G., & Uhler, C. (2018). Learning directed acyclic graph models based on sparsest permutations. Stat, 7(1), e183.
-* Saeed, B., Belyaeva, A., Wang, Y., & Uhler, C. (2020). Anchored causal inference in the presence of measurement error. In Conference on uncertainty in artificial intelligence (pp. 619-628). PMLR.
-* Shin, J., Chung, J., Hwang, S., & Park, G. (2025). Discovering Causal Structures in Corrupted Data: Frugality in Anchored Gaussian DAG Models. Computational Statistics & Data Analysis, 108267.
-* Street, W. N., Wolberg, W. H., & Mangasarian, O. L. (1993, July). Nuclear feature extraction for breast tumor diagnosis. In Biomedical image processing and biomedical visualization (Vol. 1905, pp. 861-870). SPIE.
-* Zhang, K., Gong, M., Ramsey, J., Batmanghelich, K., Spirtes, P., & Glymour, C. (2017). Causal discovery in the presence of measurement error: Identifiability conditions. arXiv preprint arXiv:1706.03768.
+* Chung, J., Lee, S., & Park, G. (2025). Prediction of high-risk mountain accident areas using a Hurdle model. Korean Journal of Applied Statistics, 38(4), 531-551.

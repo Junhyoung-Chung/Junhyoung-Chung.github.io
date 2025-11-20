@@ -24,6 +24,13 @@ To the best of our knowledge, this is the first **convex formulation** for geome
 
 # Introduction
 
+<div style="display: flex; justify-content: center;">
+    <figure style="text-align: center;">
+        <img src="/assets/images/space_alignment.jpg" alt="space alignment" style="width: 100%">
+        <figcaption>Figure: Illustration of a coupling that aligns the geometry of two data spaces</figcaption>
+    </figure>
+</div>
+
 * Optimal transport (OT) provides a fundamental framework for comparing probability measures by quantifying the minmal cost required to move mass across spaces.
 * A central appeal of OT lies in its ability to uncover meaningful correspondences between probability measures.
 * However, the classical OT is agnostic to situations where geometric alignment between the source space $\mathcal{X}$ and the target space $\mathcal{Y}$ is important.

@@ -103,32 +103,24 @@ My goal is to design statistical algorithms that identify and utilize this struc
 
 <h3>Spatial Data</h3>
 
-<div style="
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  margin: 8px 0 8px 0;
-">
+<div style="margin: 25px 0 35px 0;">
 
-  <div style="flex: 0 0 330px;">
-    <img src="/assets/images/grid_seorak_type.jpg"
-         alt="Mountain accident risk map"
-         style="
-           width: 100%;
-           height: auto;
-           border-radius: 10px;
-         ">
+  <div style="display: flex; justify-content: center;">
+    <figure style="text-align: center;">
+        <img src="/assets/images/grid_seorak.jpg" alt="Single 1km X 1km grid of Seorak" style="width: 100%; margin-right: 10px;">
+    </figure>
+    <figure style="text-align: center;">
+        <img src="/assets/images/grid_seorak_type.jpg" alt="Visualization of grid by accident type in Seorak" style="width: 100%;">
+    </figure>
   </div>
 
-  <div style="flex: 1;">
-    <p>
-    I am interested in spatial data where risk is distributed over complex geographic domains, such as mountain regions with heterogeneous terrain and weather patterns.
-    In one of my projects, I developed statistical models that integrate domain knowledge, covariates, and spatial structure to predict <strong>mountain accident risk</strong> and identify high risk areas in a transparent and data driven manner.
-    </p>
-    <p>
-    This line of work has motivated a broader interest in methods that respect underlying spatial geometry, handle sparsity in observations, and provide interpretable output for decision making.
-    </p>
-  </div>
+  <p>
+  I am interested in spatial data where risk is distributed over complex geographic domains, such as mountain regions with heterogeneous terrain and weather patterns.
+  In one of my projects, I developed statistical models that integrate domain knowledge, covariates, and spatial structure to predict <strong>mountain accident risk</strong> and identify high risk areas in a transparent and data driven manner.
+  </p>
+  <p>
+  This line of work has motivated a broader interest in methods that respect underlying spatial geometry, handle sparsity in observations, and provide interpretable output for decision making.
+  </p>
 </div>
 
 <p><strong>Key Project:</strong></p>
@@ -141,66 +133,27 @@ My goal is to design statistical algorithms that identify and utilize this struc
 
 <h3>Ranked Data</h3>
 
-<div style="
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  margin: 8px 0 8px 0;
-">
+<div style="margin: 25px 0 35px 0;">
 
-  <div style="flex: 0 0 48%; text-align: center; box-sizing: border-box;">
-    <table style="width: 100%; border-collapse: collapse; text-align: center; border : none; table-layout: fixed;">
-      <thead style="background-color: #f2f2f2;">
-        <tr>
-          <th style="padding: 8px;">Rank</th>
-          <th style="padding: 8px;">Score</th>
-          <th style="padding: 8px;">Item vector</th>
-          <th style="padding: 8px;">Query vector</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid lightgray;">1</td>
-          <td style="padding: 8px; border-bottom: 1px solid lightgray;">\(y_1^1\)</td>
-          <td style="padding: 8px; border-bottom: 1px solid lightgray;">\(\mathbf{x}_1^1\)</td>
-          <td style="padding: 8px; border-bottom: 1px solid lightgray;">\(\mathbf{z}_1\)</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 1px solid lightgray;">2</td>
-          <td style="padding: 8px; border-bottom: 1px solid lightgray;">\(y_1^2\)</td>
-          <td style="padding: 8px; border-bottom: 1px solid lightgray;">\(\mathbf{x}_1^2\)</td>
-          <td style="padding: 8px; border-bottom: 1px solid lightgray;">\(\mathbf{z}_1\)</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border-bottom: 3px solid black;">3</td>
-          <td style="padding: 8px; border-bottom: 3px solid black;">\(y_1^3\)</td>
-          <td style="padding: 8px; border-bottom: 3px solid black;">\(\mathbf{x}_1^3\)</td>
-          <td style="padding: 8px; border-bottom: 3px solid black;">\(\mathbf{z}_1\)</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px;">\(\pi_1\)</td>
-          <td style="padding: 8px;">\(\mathbf{y}_1\)</td>
-          <td style="padding: 8px;">\(\mathbf{X}_1\)</td>
-          <td style="padding: 8px;">\(\mathbf{Z}_1\)</td>
-        </tr>
-      </tbody>
-    </table>
-    <!-- <p style="margin-top: 10px; font-size: 14px; color: #555;">
-      Table 1. Query 1 example (\(n_1 = 3\))
-    </p> -->
+  <div style="text-align: center; margin-bottom: 18px;">
+    <img src="/assets/images/horserace-catboost_result.png"
+         alt="Mountain accident risk map"
+         style="
+           width: 100%;
+           height: auto;
+           border-radius: 10px;
+         ">
   </div>
 
-  <div style="flex: 1;">
-    <p>
-    I am interested in ranked data where the primary object of inference is an ordering rather than a single numeric outcome.
-    In one of my projects, I applied <strong>learning-to-rank methods</strong> to horse race data, treating each race as a query and each horse as an item.
-    By modeling full finishing orders with point-wise and pair-wise approaches, 
-    I investigated how different model classes capture ranking structure and how domain-specific covariates contribute to prediction performance.
-    </p>
-    <p>
-    This work motivated my broader interest in ranking problems, where samples exhibit strong mutual dependence and must be modeled jointly rather than independently.
-    </p>
-  </div>
+  <p>
+  I am interested in ranked data where the primary object of inference is an ordering rather than a single numeric outcome.
+  In one of my projects, I applied <strong>learning-to-rank methods</strong> to horse race data, treating each race as a query and each horse as an item.
+  By modeling full finishing orders with point-wise and pair-wise approaches, 
+  I investigated how different model classes capture ranking structure and how domain-specific covariates contribute to prediction performance.
+  </p>
+  <p>
+  This work motivated my broader interest in ranking problems, where samples exhibit strong mutual dependence and must be modeled jointly rather than independently.
+  </p>
 
 </div>
 

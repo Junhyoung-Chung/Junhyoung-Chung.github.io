@@ -1,0 +1,214 @@
+---
+layout: page
+---
+
+<h2>Statistical Algorithms for Complex Data</h2>
+
+<p>
+While modern AI often relies on massive models and large-scale computation, I believe that the essential information in data is fundamentally small and structured. 
+My goal is to design statistical algorithms that identify and utilize this structure, enabling both statistical and computational efficiency.
+</p>
+
+<div style="text-align: left; margin: 25px 0;">
+  <a href="https://scholar.google.com/citations?user=AuQ5vRMAAAAJ" 
+     target="_blank"
+     style="
+       display: inline-block;
+       padding: 10px 18px;
+       border: 1px solid #444;
+       border-radius: 4px;
+       text-decoration: none;
+       font-weight: 500;
+       color: #222;
+       background-color: #f8f8f8;
+     ">
+    View my Google Scholar
+  </a>
+</div>
+
+<hr>
+
+<h2>Optimal Transport</h2>
+
+<div style="margin: 25px 0 35px 0;">
+
+  <div style="text-align: center; margin-bottom: 18px;">
+    <img src="/assets/images/space_alignment.jpg"
+         alt="optimal transport"
+         style="
+           width: 100%;
+           /* max-width: 520px; */
+           height: auto;
+           border-radius: 10px;
+         ">
+  </div>
+
+  <!-- Description -->
+  <p>
+  Optimal transport has emerged as a fundamental tool in statistics and machine learning for comparing and aligning probability distributions across diverse domains.
+  Beyond its classical formulations, there is an increasing demand for transport methodologies that respect the underlying geometry and structural characteristics of the data spaces.
+  My research focuses on developing <strong>geometry-aware and fused optimal transport frameworks</strong> that jointly account for domain structure and feature correspondence, enabling principled alignments between heterogeneous spaces.
+  </p>
+
+  <p><strong>Key Project:</strong></p>
+
+  <ul style="margin-left: 0; padding-left: 0; list-style-position: inside;">
+    <li>
+      Operator Fused Optimal Transport (OFOT): A Convex and Geometry-Preserving Formulation
+    </li>
+  </ul>
+
+</div>
+
+<hr>
+
+<h2>Graphical Models</h2>
+
+<div style="margin: 25px 0 35px 0;">
+
+  <div style="text-align: center; margin-bottom: 18px;">
+    <img src="/assets/images/anchored-DAG.png"
+         alt="anchored-DAG"
+         style="
+           width: 100%;
+           max-width: 520px;
+           height: auto;
+           border-radius: 10px;
+         ">
+  </div>
+
+  <!-- Description -->
+  <p>
+  Graphical models have long served as a principled framework for uncovering underlying causal structures, benefiting a wide range of fields such as biology, social science, and environmental science.
+  However, data in these domains are often subject to measurement error and other forms of contamination.
+  My research focuses on developing <strong>graphical models robust to data contamination</strong>, enabling principled and stable learning of dependency structures in complex and imperfect data environments.
+  </p>
+
+  <p><strong>Key Projects:</strong></p>
+
+  <ul style="margin-left: 0; padding-left: 0; list-style-position: inside;">
+    <li>
+      Discovering causal structures in corrupted data: frugality in anchored Gaussian DAG models<br>
+    </li>
+    <li>
+      Learning distribution-free anchored linear structural equation models in the presence of measurement error
+    </li>
+  </ul>
+
+</div>
+
+<hr>
+
+<h2>Application</h2>
+
+<h3>Spatial Data</h3>
+
+<div style="
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 8px 0 8px 0;
+">
+
+  <div style="flex: 0 0 330px;">
+    <img src="/assets/images/grid_seorak_type.jpg"
+         alt="Mountain accident risk map"
+         style="
+           width: 100%;
+           height: auto;
+           border-radius: 10px;
+         ">
+  </div>
+
+  <div style="flex: 1;">
+    <p>
+    I am interested in spatial data where risk is distributed over complex geographic domains, such as mountain regions with heterogeneous terrain and weather patterns.
+    In one of my projects, I developed statistical models that integrate domain knowledge, covariates, and spatial structure to predict <strong>mountain accident risk</strong> and identify high risk areas in a transparent and data driven manner.
+    </p>
+    <p>
+    This line of work has motivated a broader interest in methods that respect underlying spatial geometry, handle sparsity in observations, and provide interpretable output for decision making.
+    </p>
+  </div>
+</div>
+
+<p><strong>Key Project:</strong></p>
+
+<ul style="margin-left: 0; padding-left: 0; list-style-position: inside;">
+  <li>
+    Prediction of high-risk mountain accident areas using a Hurdle model
+  </li>
+</ul>
+
+<h3>Ranked Data</h3>
+
+<div style="
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 8px 0 8px 0;
+">
+
+  <div style="flex: 0 0 48%; text-align: center; box-sizing: border-box;">
+    <table style="width: 100%; border-collapse: collapse; text-align: center; border : none; table-layout: fixed;">
+      <thead style="background-color: #f2f2f2;">
+        <tr>
+          <th style="padding: 8px;">Rank</th>
+          <th style="padding: 8px;">Score</th>
+          <th style="padding: 8px;">Item vector</th>
+          <th style="padding: 8px;">Query vector</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid lightgray;">1</td>
+          <td style="padding: 8px; border-bottom: 1px solid lightgray;">\(y_1^1\)</td>
+          <td style="padding: 8px; border-bottom: 1px solid lightgray;">\(\mathbf{x}_1^1\)</td>
+          <td style="padding: 8px; border-bottom: 1px solid lightgray;">\(\mathbf{z}_1\)</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 1px solid lightgray;">2</td>
+          <td style="padding: 8px; border-bottom: 1px solid lightgray;">\(y_1^2\)</td>
+          <td style="padding: 8px; border-bottom: 1px solid lightgray;">\(\mathbf{x}_1^2\)</td>
+          <td style="padding: 8px; border-bottom: 1px solid lightgray;">\(\mathbf{z}_1\)</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border-bottom: 3px solid black;">3</td>
+          <td style="padding: 8px; border-bottom: 3px solid black;">\(y_1^3\)</td>
+          <td style="padding: 8px; border-bottom: 3px solid black;">\(\mathbf{x}_1^3\)</td>
+          <td style="padding: 8px; border-bottom: 3px solid black;">\(\mathbf{z}_1\)</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px;">\(\pi_1\)</td>
+          <td style="padding: 8px;">\(\mathbf{y}_1\)</td>
+          <td style="padding: 8px;">\(\mathbf{X}_1\)</td>
+          <td style="padding: 8px;">\(\mathbf{Z}_1\)</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- <p style="margin-top: 10px; font-size: 14px; color: #555;">
+      Table 1. Query 1 example (\(n_1 = 3\))
+    </p> -->
+  </div>
+
+  <div style="flex: 1;">
+    <p>
+    I am interested in ranked data where the primary object of inference is an ordering rather than a single numeric outcome.
+    In one of my projects, I applied <strong>learning-to-rank methods</strong> to horse race data, treating each race as a query and each horse as an item.
+    By modeling full finishing orders with point-wise and pair-wise approaches, 
+    I investigated how different model classes capture ranking structure and how domain-specific covariates contribute to prediction performance.
+    </p>
+    <p>
+    This work motivated my broader interest in ranking problems, where samples exhibit strong mutual dependence and must be modeled jointly rather than independently.
+    </p>
+  </div>
+
+</div>
+
+<p><strong>Key Project:</strong></p>
+
+<ul style="margin-left: 0; padding-left: 0; list-style-position: inside;">
+  <li>
+    Horse race rank prediction using learning-to-rank approaches
+  </li>
+</ul>
+

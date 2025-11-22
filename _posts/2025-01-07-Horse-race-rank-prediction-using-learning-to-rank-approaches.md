@@ -343,7 +343,7 @@ $$
 # Performance of CatBoost Ranker
 
 <div style="display: flex; justify-content: center;">
-    <img src="/assets/images/horserace-catboost_result.png" alt="RandomForest Shapley values" style="width: 100%; margin-right: 10px;">
+    <img src="/assets/images/horserace-catboost_result.png" alt="Prediction results" style="width: 100%; margin-right: 10px;">
 </div>
 
 * The precision for each rank was calculated on a new dataset from Jul 2023 - Nov 2023.

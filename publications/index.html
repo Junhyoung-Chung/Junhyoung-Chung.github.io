@@ -10,14 +10,15 @@ layout: page
 
 <p style="margin-bottom: 5px;">
   <em><strong>Junhyoung Chung</strong></em><sup>*</sup>, Gunwoong Park <br />
-  Operator fused optimal transport: A convex and geometry-preserving formulation <a href="https://drive.google.com/file/d/10MnH6sx8sr0Z3kHZE7A8BOgCQK2kuQtZ/view?usp=sharing">[Slides]</a> <br /> 
-  In preparation for ICML 2026 (full draft available upon request)
+  Fused operator optimal transport: A convex and geometry-preserving formulation <a href="https://drive.google.com/file/d/1rHYyuCF1rNZSzDbY-I0GALvJl_pbG6gV/view?usp=drive_link">[Report]</a><br /> 
+  In preparation for ICML 2026
 </p>
 <details class="link-toggle" style="margin-top: 0;">
   <summary>[Abstract]</summary>
   <div class="toggle-content">
-    Aligning distributions on distinct geometric domains with features is a fundamental problem in structured data analysis. Fused Gromov--Wasserstein (FGW) is a powerful tool for this task, but its reliance on the non-convex Gromov--Wasserstein (GW) term poses significant theoretical challenges. To overcome this limitation, this study proposes an <em>operator fused optimal transport</em> (OFOT) that replaces the GW term with a kernelized operator discrepancy $\|D^{\kappa}_{\mathbb{P}_X}T_\pi - T_\pi D^{\kappa}_{\mathbb{P}_Y}\|_{\mathrm{HS}}^2$, defined via distance kernels and the conditional expectation operator. The objective, combined with a standard feature cost, is convex in the coupling, <em>isometry-consistent</em> (vanishes on isometries and, for strictly monotone $\kappa$, characterizes them), and yields a finite-sample convex quadratic program. This program is solvable via a projection-free Frank–Wolfe algorithm, supplemented by an optional linear assignment problem. We derive optimization and statistical error bounds and show minimax-optimal rates as in classical OT when the maximum number of iterations is sufficiently large. Empirically, our algorithm demonstrates exceptional stability and efficiency on lattice-structured graphs. Through real-data analysis on OASIS-3 brain connectomes, the OFOT algorithm produces highly stable and interpretable alignments, demonstrating its effectiveness and reliability for domain adaptation tasks on structured objects.
-  </div>
+    Aligning distributions on distinct geometric domains with features is a fundamental problem in structured data analysis. Fused Gromov--Wasserstein is a powerful tool for this task, but its reliance on the non-convex Gromov--Wasserstein (GW) term poses significant theoretical challenges. 
+	%%% Contribution %%%
+	To overcome this limitation, we introduce <strong>Fused Operator Optimal Transport (FOOT)</strong>, a novel convex framework that jointly preserves domain geometry and feature alignment. To this end, we propose a structural discrepancy defined by the intertwining of distance operators and conditional expectation operators, proving it to be a valid pseudometric on the space of metric-measure spaces. We also characterize the theoretical relationship between our objective and the GW discrepancy through a dispersion gap analysis; this reveals that our convexity is attained by filtering out the spatial dispersion penalty inherent in the non-convex GW formulation. Consequently, our convex formulation guarantees global convergence via the Frank--Wolfe algorithm. Empirical validation on synthetic point clouds, brain connectome analysis, and 3D shape classification demonstrates its efficacy and robustness.  </div>
 </details>
 
 <hr>

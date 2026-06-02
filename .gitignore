@@ -4,6 +4,9 @@ _site
 .jekyll-metadata
 vendor
 
+# oh-my-claudecode state
+.omc/
+
 # .DS_Store
 .DS_Store
 ._.DS_Store

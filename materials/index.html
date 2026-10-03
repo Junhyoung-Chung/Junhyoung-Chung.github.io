@@ -1,11 +1,13 @@
 ---
 title: Materials
-nav_order: 3
+nav_order: 4
 materials_view: true
 ---
+<header class="page-header">
 <p class="eyebrow">Research &amp; learning</p>
 <h1>Materials</h1>
 <p class="page-intro">Posters, seminar slides, and application materials. Select a thumbnail to preview a document.</p>
+</header>
 {% assign materials = site.materials | sort: 'year' | reverse %}
 {% if materials.size > 0 %}
 {% assign years = materials | group_by: 'year' %}

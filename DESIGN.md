@@ -3,7 +3,7 @@
 ## Source of truth
 - Status: Redesign and production replacement approved by Junhyoung on 2026-10-02.
 - Last refreshed: 2026-10-02
-- Primary product surfaces: Home, Publications, Materials, CV; the existing research URL remains available.
+- Primary product surfaces: Home, Research, Publications, Materials, material detail, and CV.
 - Evidence reviewed: existing home/index.html, publications/index.html, research/index.html, _posts, assets/CV.pdf, Analytics configuration, Google verification files, and the approved Just the Docs thumbnail-gallery proposal.
 - Base revision: f69ddd4b2d636ef892f324acacc82d282bda643f.
 
@@ -23,10 +23,10 @@
 - Key contexts: desktop research browsing and mobile links shared after talks.
 
 ## Information architecture
-- Primary navigation: Home / Publications / Materials / CV.
-- Core routes: /, /home/, /publications/, /materials/, /assets/CV.pdf.
+- Primary navigation: Home / Research / Publications / Materials / CV.
+- Core routes: /, /home/, /research/, /publications/, /materials/, /assets/CV.pdf.
 - Content hierarchy: Home contains introduction, research interests and news; publications retain Journal Papers then Conference Paper (intentional singular); materials use first-page thumbnails.
-- Compatibility: /research/ remains available. The writing archive, dated article routes, and drafts are intentionally removed.
+- Compatibility: Research is a primary navigation destination. The writing archive, dated article routes, and drafts are intentionally removed.
 
 ## Design principles
 - Let content, whitespace, and typography establish hierarchy.
@@ -36,14 +36,14 @@
 ## Visual language
 - Color: white canvas, pale gray sidebar, dark neutral text, muted plum links and selected states.
 - Typography: system sans serif; no network font dependency.
-- Spacing/layout rhythm: generous section spacing, readable line length, compact navigation.
+- Spacing/layout rhythm: shared eyebrow/title/intro page headers, generous section spacing, readable line length, compact navigation. Remove the unused search-header strip so content and sidebar identity begin together.
 - Shape/radius/elevation: thin dividers, small radii, no decorative shadows.
 - Motion: no decorative animation; honor reduced motion when scrolling to previews.
 - Imagery/iconography: portrait above the name in the sidebar (smaller above the name in the mobile header); real PDF first-page thumbnails, proportionally contained.
 
 ## Components
 - Existing components to reuse: Just the Docs layout, navigation, mobile menu, accessible skip link.
-- New/changed components: sidebar portrait, first-year Ph.D. introduction with LinkedIn, publication list, material thumbnail gallery grouped by year, inline PDF preview with close/open/download actions.
+- New/changed components: sidebar portrait, first-year Ph.D. introduction with LinkedIn, shared page headers, research figure plates and bibliographies, publication author/title/venue hierarchy, material thumbnail gallery grouped by year, inline PDF preview with close/open/download actions.
 - Variants and states: local PDF or external HTTPS PDF URL; empty gallery; selected card; open/closed preview.
 - Token/component ownership: _sass/color_schemes/academic.scss and _sass/custom/custom.scss; materials templates and a small deferred script.
 
@@ -56,7 +56,7 @@
 
 ## Responsive behavior
 - Supported breakpoints/devices: 320px mobile through desktop.
-- Layout adaptations: Just the Docs mobile menu; three/two/one gallery columns; viewer and actions remain within viewport.
+- Layout adaptations: Just the Docs mobile menu; two/one gallery columns for readable long document titles; paired research figures stack on narrow screens; viewer and actions remain within viewport. Cards align actions within each row.
 - Touch/hover differences: preview is explicitly activated; no hover-only content.
 
 ## Interaction states
@@ -84,3 +84,9 @@
 - [x] Initial materials: ICML poster, five seminar presentations ordered by their title-slide dates, and a separate SOP copy with the three program-fit faculty names replaced by OOO. Original source files remain untouched.
 - [x] Writing archive: removed with posts, drafts, unused article assets, and MathJax following owner approval on 2026-10-02.
 - [ ] Future external storage provider/domain: use explicit HTTPS file URLs now; R2 provisioning and billing are separate from this local implementation.
+
+## Site-wide refinement, 2026-10-02
+- Scope: polish every page and the shared shell while preserving all biography, research prose, publications, materials, dates, links, PDFs, and Analytics settings.
+- Implementation sequence: establish shared type/spacing/action rules; align Home and page headers; structure Research figures and references; refine publication grouping and material cards/details; verify desktop and mobile before deployment.
+- Verification: compare visible source text with revision 96bd534, run existing preservation/materials/Analytics checks and production build, inspect all page types at desktop and 320px, and exercise preview/close/menu keyboard behavior.
+- Design choice: retain the system font and muted plum palette; improve hierarchy through weight, spacing, thin rules and consistent alignment. No new fonts, dependencies or decorative assets.

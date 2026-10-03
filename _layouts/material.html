@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
+<header class="page-header material-page-header">
 <p class="eyebrow"><a href="{{ '/materials/' | relative_url }}">Materials</a> / {{ page.kind | escape }}</p>
 <h1>{{ page.title | escape }}</h1>
 <p class="page-intro">{{ page.venue | escape }} · {% if page.event_date %}<time datetime="{{ page.event_date }}">{{ page.event_date | date: '%b %-d, %Y' }}</time>{% else %}{{ page.year }}{% endif %}</p>
+</header>
 <div class="material-detail">
-  {% if page.thumbnail %}<img class="detail-thumbnail" src="{{ page.thumbnail | relative_url }}" alt="First page of {{ page.title | escape }}" width="{{ page.thumbnail_width | default: 480 }}" height="{{ page.thumbnail_height | default: 640 }}">{% endif %}
+  {% if page.thumbnail %}<div class="detail-thumbnail-frame"><img class="detail-thumbnail" src="{{ page.thumbnail | relative_url }}" alt="First page of {{ page.title | escape }}" width="{{ page.thumbnail_width | default: 480 }}" height="{{ page.thumbnail_height | default: 640 }}" decoding="async"></div>{% endif %}
   <div>{{ content }}
     <div class="material-actions">
       <a class="preview-trigger js-preview" href="{{ page.pdf_url | relative_url }}" data-preview-id="{{ page.slug | escape }}" data-preview-title="{{ page.title | escape }}" data-preview-caption="{{ page.preview_caption | default: page.kind | escape }}" aria-controls="material-preview" aria-expanded="false">Preview PDF</a>

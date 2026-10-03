@@ -8,6 +8,7 @@ _site-production/
 _site-prefix/
 review/screenshots/
 review/source-pdfs/
+review/private/
 .omx/
 __pycache__/
 *.pyc

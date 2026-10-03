@@ -1,11 +1,12 @@
 // Academic shell: use Just the Docs' responsive navigation and layout.
 html { scroll-padding-top: 1.5rem; }
 body { -webkit-font-smoothing: antialiased; }
-.site-title { padding-top: 1.8rem; padding-bottom: 1.8rem; }
+.site-title { height: auto; padding-top: 1.8rem; padding-bottom: 1.8rem; }
 .site-identity { display: flex; flex-direction: column; gap: .55rem; }
+.sidebar-photo { width: 144px; height: 172px; object-fit: cover; border-radius: 4px; margin-bottom: .6rem; }
 .site-name { font-size: 1.32rem; font-weight: 600; letter-spacing: -.035em; }
 .site-affiliation { color: #706977; font-size: .75rem; font-weight: 400; letter-spacing: .015em; }
-.site-header { min-height: 8rem; height: auto; border-bottom: 0; }
+.site-header { min-height: 8rem; height: auto; max-height: none; flex-shrink: 0; border-bottom: 0; }
 .site-nav { padding-top: 1rem; }
 .site-nav .nav-list-link { font-size: .95rem; padding-top: .62rem; padding-bottom: .62rem; }
 .site-nav .nav-list-link.active { color: #754760; background: #ede7ed; font-weight: 600; }
@@ -25,7 +26,6 @@ body { -webkit-font-smoothing: antialiased; }
 .profile-header h1 { margin-bottom: .6rem; }
 .korean-name { display: block; font-size: 1rem; letter-spacing: 0; color: #706977; font-weight: 400; margin-top: .6rem; }
 .profile-role { font-size: .9rem; color: #706977; }
-.profile-photo { width: 144px; height: 172px; flex: 0 0 auto; object-fit: cover; border-radius: 4px; }
 .profile-links { display: flex; gap: 1.2rem; flex-wrap: wrap; font-size: .85rem; }
 .link-note { color: #706977; font-size: .7rem; margin-left: .3rem; }
 .intro-copy { max-width: 47rem; }
@@ -48,6 +48,7 @@ body { -webkit-font-smoothing: antialiased; }
 .materials-heading h2 { font-size: .85rem; font-weight: 500; margin: 0; color: #754760; }
 .materials-heading > span { color: #706977; font-size: .75rem; }
 .materials-gallery { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 2rem 1.5rem; }
+.materials-year + .materials-year { margin-top: 3rem; }
 .material-card { min-width: 0; }
 .main-content .material-thumbnail { display: flex; justify-content: center; align-items: center; aspect-ratio: 4/3; padding: 14px; margin-bottom: 1rem; background: #f6f5f7; border: 1px solid #e9e6eb; border-radius: 3px; text-decoration: none; }
 .material-thumbnail img { width: 100%; height: 100%; min-height: 0; object-fit: contain; }
@@ -84,13 +85,13 @@ a:focus-visible, button:focus-visible { outline: 2px solid #754760; outline-offs
   .site-name { font-size: 1.05rem; }
   .site-affiliation { font-size: .65rem; }
   .site-identity { gap: .25rem; }
+  .sidebar-photo { width: 64px; height: 76px; margin-bottom: .35rem; }
   .site-nav { padding-top: .5rem; }
   .main-content-wrap { padding-top: 2rem; }
 }
 @media (max-width: 35rem) {
   .main-content h1 { font-size: 1.65rem; }
   .profile-header { gap: 1.2rem; align-items: flex-start; }
-  .profile-photo { width: 90px; height: 112px; }
   .profile-header h1 { font-size: 1.45rem; }
   .profile-role { font-size: .8rem; }
   .profile-links { gap: .6rem 1rem; }

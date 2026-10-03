@@ -2,7 +2,7 @@
   {% include analytics.html %}
 {% endif %}
 {% if page.materials_view %}
-<script src="{{ '/assets/js/materials.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/materials.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 {% endif %}
 {% if page.math %}
 <script>

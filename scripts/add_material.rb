@@ -12,8 +12,9 @@ parser = OptionParser.new do |args|
   args.on('--file PATH', 'Local PDF used to generate its first-page thumbnail') { |v| options[:file] = v }
   args.on('--slug SLUG', 'Lowercase words separated by hyphens') { |v| options[:slug] = v }
   args.on('--title TITLE') { |v| options[:title] = v }
-  args.on('--kind KIND', Materials::KINDS, 'Seminar slides, Poster, Lecture notes, or Research paper') { |v| options[:kind] = v }
+  args.on('--kind KIND', Materials::KINDS, Materials::KINDS.join(', ')) { |v| options[:kind] = v }
   args.on('--year YEAR', Integer) { |v| options[:year] = v }
+  args.on('--date YYYY-MM-DD', 'Presentation date (must match --year)') { |v| options[:event_date] = v }
   args.on('--venue TEXT') { |v| options[:venue] = v }
   args.on('--pdf-url URL', 'Public HTTPS original; omits the PDF from Git') { |v| options[:pdf_url] = v }
   args.on('-h', '--help') { puts args; exit }
@@ -40,6 +41,10 @@ begin
   metadata['venue'] = options[:venue] if options[:venue]
   raise ArgumentError, 'year must be a four-digit integer' unless (1900..2100).cover?(options[:year])
   raise ArgumentError, 'title cannot be blank' if options[:title].strip.empty?
+  if options[:event_date]
+    Materials.event_date!(options[:event_date], year: options[:year])
+    metadata['event_date'] = options[:event_date]
+  end
   Dir.mktmpdir('material-thumbnail-') do |temp|
     target = File.join(temp, 'first-page')
     _stdout, stderr, status = Open3.capture3('pdftoppm', '-f', '1', '-singlefile', '-scale-to-x', '480', '-scale-to-y', '-1', '-jpeg', '-jpegopt', 'quality=82', source.to_s, target)

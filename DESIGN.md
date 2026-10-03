@@ -39,11 +39,11 @@
 - Spacing/layout rhythm: generous section spacing, readable line length, compact navigation.
 - Shape/radius/elevation: thin dividers, small radii, no decorative shadows.
 - Motion: no decorative animation; honor reduced motion when scrolling to previews.
-- Imagery/iconography: existing portrait and real PDF first-page thumbnails, proportionally contained.
+- Imagery/iconography: portrait above the name in the sidebar (smaller above the name in the mobile header); real PDF first-page thumbnails, proportionally contained.
 
 ## Components
 - Existing components to reuse: Just the Docs layout, navigation, mobile menu, accessible skip link.
-- New/changed components: profile header, publication list, material thumbnail gallery, inline PDF preview with close/open/download actions.
+- New/changed components: sidebar portrait, first-year Ph.D. introduction with LinkedIn, publication list, material thumbnail gallery grouped by year, inline PDF preview with close/open/download actions.
 - Variants and states: local PDF or external HTTPS PDF URL; empty gallery; selected card; open/closed preview.
 - Token/component ownership: _sass/color_schemes/academic.scss and _sass/custom/custom.scss; materials templates and a small deferred script.
 
@@ -81,5 +81,6 @@
 - Deployment boundary: only isolated local worktree/branch work is authorized now. No main merge/push, Pages settings changes, public preview, or new cloud account/bucket until authorized.
 
 ## Open questions
-- [ ] Initial seminar/poster/lecture-note files: owner Junhyoung; absent an answer, use the already-public ICML paper as a clearly labeled research paper.
+- [x] Initial materials: ICML poster, five seminar presentations ordered by their title-slide dates, and a separate SOP copy with the three program-fit faculty names replaced by OOO. Original source files remain untouched.
+- [ ] Writing archive: retained outside primary navigation to preserve existing links; owner is considering removing posts and drafts. No deletion performed in this revision.
 - [ ] Future external storage provider/domain: use explicit HTTPS file URLs now; R2 provisioning and billing are separate from this local implementation.

@@ -29,12 +29,15 @@ ruby scripts/add_material.rb \
   --title 'Seminar title' \
   --kind 'Seminar slides' \
   --year 2026 \
+  --date '2026-08-19' \
   --venue 'Seminar name'
 ```
 
 The command requires Poppler's `pdftoppm` (already available on the development Mac; install `poppler-utils` on Ubuntu). It creates a 480px first-page JPEG, an `_materials/*.md` entry, and a copy of the PDF under `assets/materials/`. Existing files are never overwritten. Local PDFs above 20 MiB must use an external URL.
 
-Kinds: `Seminar slides`, `Poster`, `Lecture notes`, `Research paper`.
+Kinds: `Seminar slides`, `Poster`, `Lecture notes`, `Research paper`, `Application material`.
+
+The gallery groups documents by year, newest first. The optional `--date` records the presentation date printed on the document and orders dated materials within each year; documents without a precise date follow them. In manually edited metadata, quote `event_date: '2026-08-19'` and keep it consistent with `year`. Do not infer a presentation date from a folder name.
 
 ### Keep the original PDF outside Git
 
@@ -59,7 +62,9 @@ For slides/posters, `thumbnail_width` and `thumbnail_height` can optionally reco
 
 Use a stable public HTTPS URL. The file server should return `Content-Type: application/pdf`, allow embedding from the homepage, and preferably support byte-range requests. Avoid expiring links. Browser PDF support varies, especially on phones; the original-file link remains available beside every preview. Cross-origin downloads use the PDF viewer/new tab rather than promising that the HTML `download` attribute will force a download.
 
-The initial research-paper entry uses the arXiv PDF, explicitly labeled as that version, with a separate final PMLR publication link. PMLR's raw GitHub PDF currently sends `X-Frame-Options: deny` and cannot be embedded directly.
+The gallery currently contains the ICML 2026 poster, five seminar presentations from 2024–2025, and the UC Davis statement of purpose from 2025. They are small local PDFs (about 7.4 MiB combined); larger future documents can use external URLs without changing the viewer.
+
+Only the sanitized SOP is stored under `assets/materials/sop-uc-davis.pdf`. The three faculty names in its program-fit section were replaced with `OOO` before compilation. Original application sources and private verification files are excluded from Git and the site. To replace the SOP, sanitize a separate copy first and verify both extracted text and rendered pages before copying it into public assets.
 
 ### Optional R2 setup later
 

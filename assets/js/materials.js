@@ -40,6 +40,8 @@
       frame.referrerPolicy = 'no-referrer';
       frame.src = url;
       frameContainer.replaceChildren(frame);
+      var yearSection = trigger.closest('.materials-year');
+      if (yearSection) yearSection.appendChild(panel);
       panel.hidden = false;
       status.textContent = 'Preview opened for ' + trigger.dataset.previewTitle + '.';
       panel.querySelector('.preview-close').focus({preventScroll: true});

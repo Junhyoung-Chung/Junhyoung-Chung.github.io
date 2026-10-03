@@ -16,6 +16,11 @@ Dir.mktmpdir('materials-contract-') do |dir|
   root.join('notes.pdf').write('%PDF-1.7 test fixture')
   valid = {'title' => 'Lecture notes', 'kind' => 'Lecture notes', 'year' => 2026, 'pdf_url' => '/notes.pdf'}
   Materials.validate!(valid, root: root)
+  Materials.validate!(valid.merge('kind' => 'Application material'), root: root)
+  Materials.validate!(valid.merge('event_date' => '2026-08-19'), root: root)
+  ['2025-08-19', '2026-02-30', '2026-8-19', '', 20260819, nil].each do |date|
+    rejects('invalid or mismatched event date') { Materials.validate!(valid.merge('event_date' => date), root: root) }
+  end
   Materials.validate!(valid.merge('pdf_url' => 'https://files.example.org/notes.pdf?version=2'), root: root)
   ['javascript:alert(1)', 'data:application/pdf;base64,abc', '//example.org/a.pdf', 'http://example.org/a.pdf', 'https://user:secret@example.org/a.pdf', '/%2e%2e/notes.pdf', '/missing.pdf', '/notes.pdf%00'].each do |url|
     rejects(url) { Materials.validate!(valid.merge('pdf_url' => url), root: root) }

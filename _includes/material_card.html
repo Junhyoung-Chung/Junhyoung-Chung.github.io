@@ -5,6 +5,7 @@
   <p class="material-kind">{{ include.material.kind | escape }} · {{ include.material.year }}</p>
   <h3><a href="{{ include.material.url | relative_url }}">{{ include.material.title | escape }}</a></h3>
   {% if include.material.venue %}<p class="material-venue">{{ include.material.venue | escape }}</p>{% endif %}
+  {% if include.material.event_date %}<p class="material-venue"><time datetime="{{ include.material.event_date }}">{{ include.material.event_date | date: '%b %-d, %Y' }}</time></p>{% endif %}
   <div class="material-actions">
     <a class="preview-trigger js-preview" href="{{ include.material.pdf_url | relative_url }}" data-preview-id="{{ include.material.slug | escape }}" data-preview-title="{{ include.material.title | escape }}" data-preview-caption="{{ include.material.preview_caption | default: include.material.kind | escape }}" aria-controls="material-preview" aria-expanded="false">Preview<span class="visually-hidden"> {{ include.material.title | escape }}</span></a>
     <a href="{{ include.material.pdf_url | relative_url }}" target="_blank" rel="noopener noreferrer">Open PDF<span class="visually-hidden">: {{ include.material.title | escape }}</span><span aria-hidden="true"> ↗</span></a>

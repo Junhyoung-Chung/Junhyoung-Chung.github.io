@@ -11,7 +11,7 @@
 ## Automated checks passed
 
 - Jekyll 4.4.1 + Just the Docs 0.12.0 development and production builds.
-- 14 generated HTML pages; all local links and anchors resolve; no duplicate IDs.
+- 20 generated HTML pages; all local links and anchors resolve; no duplicate IDs.
 - CV and both Google verification files match the original revision byte for byte.
 - Five publication titles and Journal Papers → Conference Paper order preserved.
 - Home alias, research, archive, and four dated article routes exist.
@@ -27,19 +27,22 @@
 
 - Desktop at 1280px and mobile layout at 320px.
 - Mobile menu opens and reaches Materials; no horizontal overflow on Home, Publications, and Materials.
-- Both the thumbnail and Preview action open the actual external arXiv PDF in Chrome's viewer.
+- Both the thumbnail and Preview action open the local ICML poster in Chrome's viewer; all seven material selections point to the correct local PDF and retain only one iframe.
 - Enter activates the preview. Close/Escape remove the iframe and return focus to the triggering link.
-- PDF version is explicitly labeled, and the detail page links to the final PMLR publication.
+- The ICML poster detail page links to the final PMLR publication. The selected preview appears within its year section.
+- Five seminar dates appear in descending order: 2025-08-19, 2025-07-10, 2025-01-09, 2024-07-25, 2024-06-26. Dates come from title slides, including the January 2025 presentation stored in the 2024 winter folder.
+- Portrait appears fully above the sidebar name without overlapping navigation; mobile retains a smaller portrait above the name. First-year introduction and LinkedIn links are present.
+- At 320px, Home and the seven-card Materials gallery have no horizontal overflow. Enter opens the SOP preview with a 290px frame; Escape closes it.
 - Existing horse-race article rendered 41 MathJax containers with no MathJax error nodes and no page-wide overflow at 320px.
 - Screenshots are local review outputs under `review/screenshots/`, excluded from Git and the site build.
 
 ## Size evidence
 
-- Full production output, including preserved archive images: approximately 13.22 MiB.
-- New first-page thumbnail: 76,788 bytes.
+- Full production output, including preserved archive images: approximately 20.84 MiB.
+- Seven first-page thumbnails: approximately 223.2 KiB combined.
 - Optimized portrait: 78,198 bytes (original source retained).
-- Material interaction script: 2,489 bytes; theme script: 5,075 bytes.
-- External PDF original is not stored in the Git repository or deployment artifact.
+- Material interaction script: approximately 2.6 KiB; theme script: 5,075 bytes.
+- Seven local PDFs: approximately 7.40 MiB combined. Only the sanitized SOP is included. External HTTPS PDFs remain supported for future larger files.
 - These are file sizes, not a claim of measured public-network loading speed.
 
 ## Remaining deployment boundaries
@@ -48,4 +51,12 @@
 - GitHub Pages' current build configuration has not been changed; confirm/switch it at the approved cutover.
 - No R2 account/bucket has been provisioned. Local and external public PDF URLs work now; connecting a future file host only changes material metadata.
 - Mobile layout testing used a 320px desktop browser viewport. Actual mobile PDF viewers vary; the Open PDF link remains the fallback.
-- Initial gallery contains only the already-public ICML paper. Additional private seminar/poster/note files have not been published.
+- Gallery contains the user-selected ICML poster, five seminar decks, and a sanitized SOP. These additions are local only; nothing has been pushed or publicly deployed.
+- Writing archive and drafts remain preserved pending the owner's decision; they are not in primary navigation.
+
+## SOP verification
+
+- Compiled a separate copy after replacing the three faculty names in the program-fit paragraph with `OOO`; no overlay-based masking.
+- Extracted output contains exactly three `OOO` replacements and none of the three original target names. Text matches the original after those replacements and line-wrap normalization.
+- Rendered and visually inspected all three output pages. Original PDF SHA-256 is unchanged.
+- Private TeX, bibliography, original-name checklist, logs, and page renders remain under ignored `review/private/`; the entire review directory is excluded from Jekyll.

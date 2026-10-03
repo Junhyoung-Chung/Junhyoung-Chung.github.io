@@ -1,19 +1,17 @@
 ---
-title: "Convex distance operator transport: A convex and geometry-preserving formulation"
-kind: Research paper
+title: 'Convex distance operator transport: A convex and geometry-preserving formulation'
+kind: Poster
 year: 2026
-venue: ICML 2026 · arXiv version
-pdf_url: https://arxiv.org/pdf/2606.02047
-preview_caption: Research paper · arXiv version
-thumbnail: /assets/thumbnails/convex-distance-operator-transport.jpg
+venue: ICML 2026
+pdf_url: "/assets/materials/convex-distance-operator-transport.pdf"
+thumbnail: "/assets/thumbnails/convex-distance-operator-transport.jpg"
 thumbnail_width: 480
-thumbnail_height: 621
+thumbnail_height: 360
 source_url: https://proceedings.mlr.press/v306/chung26d.html
-source_label: Published version at PMLR
+source_label: Published paper at PMLR
+preview_caption: ICML 2026 poster
 ---
 
 Junhyoung Chung, Euijong Song, Won Hwa Kim, and Gunwoong Park.
 
-A convex optimal transport framework for aligning data while preserving feature correspondence and geometric structure.
-
-The preview shows the arXiv version. The final published version is available from PMLR.
+Poster accompanying our ICML 2026 paper.

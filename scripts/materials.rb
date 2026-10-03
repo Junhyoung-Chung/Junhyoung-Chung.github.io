@@ -2,10 +2,20 @@
 require 'yaml'
 require 'uri'
 require 'pathname'
+require 'date'
 
 module Materials
   ROOT = Pathname.new(__dir__).parent
-  KINDS = ['Seminar slides', 'Poster', 'Lecture notes', 'Research paper'].freeze
+  KINDS = ['Seminar slides', 'Poster', 'Lecture notes', 'Research paper', 'Application material'].freeze
+
+  def self.event_date!(value, year:)
+    unless value.is_a?(String) && value.match?(/\A\d{4}-\d{2}-\d{2}\z/) && Date.iso8601(value).year == year
+      raise ArgumentError, 'event_date must be a quoted YYYY-MM-DD date matching year'
+    end
+    true
+  rescue Date::Error
+    raise ArgumentError, 'event_date must be a valid calendar date'
+  end
 
   def self.read(path)
     match = path.read.match(/\A---\s*\n(.*?)\n---\s*(?:\n|\z)/m)
@@ -40,6 +50,7 @@ module Materials
     end
     raise ArgumentError, "kind must be one of: #{KINDS.join(', ')}" unless KINDS.include?(data['kind'])
     raise ArgumentError, 'year must be a four-digit integer' unless data['year'].is_a?(Integer) && (1900..2100).cover?(data['year'])
+    event_date!(data['event_date'], year: data['year']) if data.key?('event_date')
     file_url!(data['pdf_url'], root: root, extension: '.pdf')
     file_url!(data['thumbnail'], root: root) if data['thumbnail']
     file_url!(data['source_url'], root: root) if data['source_url']

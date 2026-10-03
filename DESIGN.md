@@ -15,7 +15,7 @@
 ## Product goals
 - Goals: quickly understand Junhyoung's research and find/read research materials without mandatory downloads.
 - Non-goals: a new posting platform, accounts, an upload CMS, automatic public cloud provisioning.
-- Success signals: small initial page load, working PDF previews and fallback links, complete publication/CV preservation, production deployment only after approval (received 2026-10-02).
+- Success signals: small initial page load, working PDF previews and fallback links, complete publication/CV preservation, automatic deployment of validated pushes to main (approved 2026-10-02).
 
 ## Personas and jobs
 - Primary personas: researchers, prospective collaborators, seminar attendees, students.
@@ -78,7 +78,7 @@
 - Performance constraints: local system fonts, disabled search until needed, no eagerly embedded PDFs, compressed first-page thumbnails, no R2 credentials in the browser or repository.
 - Compatibility constraints: original GA4 ID and Google Search Console verification files preserved; GA loads only for production builds on the real production hostname.
 - Test/screenshot expectations: check preserved URLs/files, internal links, development/production Analytics gates, hostile material URLs, empty/nonempty gallery, keyboard interactions, desktop and 320px mobile layouts.
-- Deployment boundary: owner approved the main merge/push, Pages cutover, and archive removal on 2026-10-02. New cloud accounts or paid storage remain outside scope.
+- Deployment boundary: owner approved the main merge/push, Pages cutover, archive removal, and automatic deployment on pushes to main on 2026-10-02. Builds must pass the existing checks before publishing; other branches do not deploy. New cloud accounts or paid storage remain outside scope.
 
 ## Open questions
 - [x] Initial materials: ICML poster, five seminar presentations ordered by their title-slide dates, and a separate SOP copy with the three program-fit faculty names replaced by OOO. Original source files remain untouched.

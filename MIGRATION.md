@@ -2,9 +2,10 @@
 
 Junhyoung approved replacing the production website and removing the writing archive on October 2, 2026.
 
-- Implementation branch: `redesign/just-the-docs`
-- Isolated worktree: `../Junhyoung-Chung.github.io-redesign`
-- Production source worktree: `../Junhyoung-Chung.github.io` (`main`)
+- Current working directory: `~/Documents/GitHub/Junhyoung-Chung.github.io` (`main`)
+- Initial implementation branch: `redesign/just-the-docs` (merged)
+- Temporary redesign worktree: retired after consolidation; all source changes are in `main`
+- Local review artifacts: `review/screenshots/`, `review/private/`, and `review/source-pdfs/` in the current working directory; these remain ignored by Git and excluded from the published site
 - Previous production revision: `f69ddd4b2d636ef892f324acacc82d282bda643f`
 - Backup tag: `pre-redesign-2026-10-02`
 

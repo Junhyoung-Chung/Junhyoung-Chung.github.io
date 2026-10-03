@@ -6,15 +6,18 @@ The redesign and removal of the writing archive were approved by Junhyoung on Oc
 
 ## Local preview
 
+Use `~/Documents/GitHub/Junhyoung-Chung.github.io` on `main` for ongoing work. The temporary redesign worktree has been retired.
+
 Use Ruby 3.2.10 (the repository includes `.ruby-version`). On this Mac, prefix Ruby/Bundler commands with `rbenv exec` if needed.
 
 ```sh
+cd ~/Documents/GitHub/Junhyoung-Chung.github.io
 bundle _2.4.19_ config set --local path vendor/bundle
 bundle _2.4.19_ install
-bundle _2.4.19_ exec jekyll serve --host 127.0.0.1 --port 4173
+bundle exec jekyll serve --livereload
 ```
 
-Open <http://127.0.0.1:4173/>. Preview builds do not load Google Analytics. A production build also refuses to load Analytics on any hostname except `junhyoung-chung.github.io`.
+Open <http://localhost:4000/>. The install commands are only needed for initial setup or changed dependencies. Preview builds do not load Google Analytics. A production build also refuses to load Analytics on any hostname except `junhyoung-chung.github.io`.
 
 ## Add a material
 

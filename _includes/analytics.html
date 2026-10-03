@@ -1,7 +1,14 @@
-{%- if jekyll.environment != 'development' -%}
-  {%- if site.analytics.provider == 'google' -%}
-    {%- include analytics-providers/google.html -%}
-  {%- elsif site.analytics.provider == 'custom' -%}
-    {%- include analytics-providers/custom.html -%}
-  {%- endif -%}
-{%- endif -%}
+<script>
+(function () {
+  if (window.location.hostname !== {{ site.analytics.production_hostname | jsonify }}) return;
+  var measurementId = {{ site.analytics.measurement_id | jsonify }};
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', measurementId);
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(measurementId);
+  document.head.appendChild(script);
+}());
+</script>

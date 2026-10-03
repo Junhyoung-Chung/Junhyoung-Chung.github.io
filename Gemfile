@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
-gemspec
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-gem 'webrick'
+gem "jekyll", "4.4.1"
+gem "just-the-docs", "0.12.0"
+gem "jekyll-sitemap", "~> 1.4"
+gem "webrick", "~> 1.9"

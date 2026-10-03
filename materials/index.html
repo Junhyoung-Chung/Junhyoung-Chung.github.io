@@ -1,0 +1,18 @@
+---
+title: Materials
+nav_order: 3
+materials_view: true
+---
+<p class="eyebrow">Research &amp; learning</p>
+<h1>Materials</h1>
+<p class="page-intro">Papers, seminar slides, posters, and lecture notes.</p>
+{% assign materials = site.materials | sort: 'year' | reverse %}
+{% if materials.size > 0 %}
+<div class="materials-heading"><h2>Available materials</h2><span>{{ materials.size }} {% if materials.size == 1 %}document{% else %}documents{% endif %}</span></div>
+<div class="materials-gallery">
+{% for material in materials %}{% include material_card.html material=material %}{% endfor %}
+</div>
+{% include material_preview.html %}
+{% else %}
+<p class="materials-empty">Materials will be added here as they become available.</p>
+{% endif %}

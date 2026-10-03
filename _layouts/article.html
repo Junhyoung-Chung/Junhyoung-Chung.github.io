@@ -1,29 +1,7 @@
 ---
-layout: page
-type: article
+layout: default
 ---
-
-{%- include snippets/assign.html
-  target = site.data.variables.default.page.sharing
-  source0=layout.sharing source1=page.sharing -%}
-{%- assign _sharing = __return -%}
-
-<div class="layout--article">
-  {%- include article/top/custom.html -%}
-
-  <div class="article__content" itemprop="articleBody">{{ content }}</div>
-
-  {%- if _sharing -%}
-    <section class="article__sharing d-print-none">{%- include sharing.html -%}</section>
-  {%- endif -%}
-
-  <div class="d-print-none">
-    {%- include article-footer.html -%}
-    {%- include article-section-navigator.html -%}
-  </div>
-
-</div>
-
-<script>
-  {%- include scripts/article.js -%}
-</script>
+<p class="eyebrow"><a href="{{ '/archive/' | relative_url }}">Writing archive</a></p>
+<h1>{{ page.title }}</h1>
+<p class="article-date"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time></p>
+<div class="archived-article">{{ content }}</div>

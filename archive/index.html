@@ -1,3 +1,8 @@
 ---
-layout: archive
+title: Writing archive
+nav_exclude: true
 ---
+<p class="eyebrow">Earlier writing</p>
+<h1>Writing archive</h1>
+<p class="page-intro">Notes on my earlier research. For papers and presentation files, visit <a href="{{ '/publications/' | relative_url }}">Publications</a> and <a href="{{ '/materials/' | relative_url }}">Materials</a>.</p>
+<ul class="archive-list">{% for post in site.posts %}<li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %Y' }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>{% endfor %}</ul>

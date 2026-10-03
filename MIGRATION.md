@@ -1,32 +1,31 @@
-# Isolated website redesign
+# Website cutover
 
-This branch is a review candidate, not a production deployment.
+Junhyoung approved replacing the production website and removing the writing archive on October 2, 2026.
 
-- Branch: `redesign/just-the-docs`
-- Worktree: `../Junhyoung-Chung.github.io-redesign`
-- Original worktree: `../Junhyoung-Chung.github.io` (`main`)
-- Original revision: `f69ddd4b2d636ef892f324acacc82d282bda643f`
-- Do not merge/push to `main` or change GitHub Pages settings until Junhyoung gives final approval.
+- Implementation branch: `redesign/just-the-docs`
+- Isolated worktree: `../Junhyoung-Chung.github.io-redesign`
+- Production source worktree: `../Junhyoung-Chung.github.io` (`main`)
+- Previous production revision: `f69ddd4b2d636ef892f324acacc82d282bda643f`
+- Backup tag: `pre-redesign-2026-10-02`
 
-## Implementation sequence
+## Deployment
 
-1. Capture preservation checks for the CV, verification files, publication titles/order, and existing public routes.
-2. Replace the TeXt theme scaffold only in this worktree with Just the Docs; preserve author content and old article URLs.
-3. Add the Materials collection, local/external PDF URLs, compressed first-page thumbnails, and on-demand preview.
-4. Carry forward GA4 with production-build and production-hostname gates.
-5. Build development and production variants; check links, data, JS syntax, resource sizes, keyboard interactions, and desktop/mobile rendering.
-6. Record review instructions and validation evidence. Leave production untouched.
+1. Confirm production has no new commits or uncommitted changes; retain the previous revision under the backup tag.
+2. Run material, content-preservation, link, Analytics, and production-build checks.
+3. Merge the approved redesign into `main` and push the branch and backup tag without rewriting history.
+4. Set GitHub Pages Source to GitHub Actions. Run `pages.yml` on `main` with confirmation `publish-just-the-docs`.
+5. Verify the completed deployment and live Home, Publications, Materials, CV, Google verification files, PDF previews, and GA4 tag requests.
 
-## Production cutover — only after explicit final approval
+The manual deployment workflow remains gated to `main`. Routine local builds and checks never publish.
 
-1. Check that production `main` has not changed since the base revision; integrate any later content changes into this branch first.
-2. Create a backup tag for the then-current production revision, without rewriting history.
-3. Merge the approved branch. Configure GitHub Pages to use GitHub Actions if required by the existing Pages setup.
-4. Run the manually gated deployment workflow on `main` with its required confirmation value.
-5. Check the live home, publications, CV, material previews, Google verification URLs, and Analytics tag/hostname.
+## Removed writing
 
-Rollback by reverting the migration merge and restoring the previous Pages build configuration if it changed. Do not force-push or delete the original repository.
+The writing archive, posts, drafts, article layout, MathJax, and unused writing images were intentionally removed. Old article URLs return the site's 404 page. Research pages, publications, CV, material PDFs, portrait, and both Google verification files remain.
+
+## Rollback
+
+Revert the migration merge (with `git revert -m 1 <merge-commit>`) rather than force-pushing. The backup tag retains the former source. To return to the old GitHub Pages builder, restore its prior branch-based publishing source (`main`, repository root) as well. Record the actual prior Pages source during cutover before relying on that default.
 
 ## External files
 
-The website supports root-relative local PDF paths and public HTTPS PDF URLs. No R2 account, domain, bucket, billing setting, or upload is created by this migration. Public cloud setup can be completed later while the site and its existing URL stay unchanged.
+The website supports local PDFs and public HTTPS PDF URLs. No new storage account, bucket, domain, billing setting, or upload is needed. Large future materials can move to an external file host by updating their metadata.

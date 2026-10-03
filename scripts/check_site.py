@@ -36,6 +36,7 @@ def main():
         assert len(page.ids) == len(set(page.ids)), f'Duplicate ID: {path}'
         assert not page.iframes, f'PDF embedded before selection: {path}'
         assert 'clientSecret' not in text and 'gitalk' not in text, f'Legacy comments leaked: {path}'
+        assert 'Writing archive' not in text and 'MathJax' not in text, f'Removed writing UI leaked: {path}'
         if not args.production:
             assert 'googletagmanager.com' not in text and 'G-CH97FJJG6N' not in text, f'Analytics in preview: {path}'
         elif path.name != 'index.html' or path.parent.name != 'home':
@@ -62,8 +63,9 @@ def main():
             assert target.is_relative_to(root) and target.is_file(), f'Broken local link: {path.relative_to(root)} -> {ref}'
             if url.fragment and tag == 'a' and target in pages:
                 assert unquote(url.fragment) in pages[target].ids, f'Broken fragment: {path.relative_to(root)} -> {ref}'
-    for name in ['DESIGN.md', 'MIGRATION.md', 'README.md', 'scripts', 'tests', 'review', 'vendor', '_drafts', '.git']:
+    for name in ['DESIGN.md', 'MIGRATION.md', 'README.md', 'scripts', 'tests', 'review', 'vendor', '_drafts', '_posts', 'archive', '.git']:
         assert not (root / name).exists(), f'Internal file published: {name}'
+    assert not list(root.glob('[0-9][0-9][0-9][0-9]/*/*/*.html')), 'Removed dated article route still published'
     total = sum(p.stat().st_size for p in root.rglob('*') if p.is_file())
     assert total < 200 * 1024 * 1024, f'Site exceeds the 200 MiB review budget: {total}'
     print(f'PASS: {len(pages)} HTML pages, local links/anchors, no eager PDFs, Analytics gates; site {total / 2**20:.2f} MiB')

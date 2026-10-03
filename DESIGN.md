@@ -1,9 +1,9 @@
 # Design
 
 ## Source of truth
-- Status: Active for the isolated redesign; production replacement awaits Junhyoung's final approval.
+- Status: Redesign and production replacement approved by Junhyoung on 2026-10-02.
 - Last refreshed: 2026-10-02
-- Primary product surfaces: Home, Publications, Materials, CV; existing research and article URLs remain available.
+- Primary product surfaces: Home, Publications, Materials, CV; the existing research URL remains available.
 - Evidence reviewed: existing home/index.html, publications/index.html, research/index.html, _posts, assets/CV.pdf, Analytics configuration, Google verification files, and the approved Just the Docs thumbnail-gallery proposal.
 - Base revision: f69ddd4b2d636ef892f324acacc82d282bda643f.
 
@@ -15,7 +15,7 @@
 ## Product goals
 - Goals: quickly understand Junhyoung's research and find/read research materials without mandatory downloads.
 - Non-goals: a new posting platform, accounts, an upload CMS, automatic public cloud provisioning.
-- Success signals: small initial page load, working PDF previews and fallback links, complete publication/CV preservation, no production changes before approval.
+- Success signals: small initial page load, working PDF previews and fallback links, complete publication/CV preservation, production deployment only after approval (received 2026-10-02).
 
 ## Personas and jobs
 - Primary personas: researchers, prospective collaborators, seminar attendees, students.
@@ -26,7 +26,7 @@
 - Primary navigation: Home / Publications / Materials / CV.
 - Core routes: /, /home/, /publications/, /materials/, /assets/CV.pdf.
 - Content hierarchy: Home contains introduction, research interests and news; publications retain Journal Papers then Conference Paper (intentional singular); materials use first-page thumbnails.
-- Compatibility: /research/, /archive/, and the four existing dated article URLs remain available without occupying primary navigation.
+- Compatibility: /research/ remains available. The writing archive, dated article routes, and drafts are intentionally removed.
 
 ## Design principles
 - Let content, whitespace, and typography establish hierarchy.
@@ -78,9 +78,9 @@
 - Performance constraints: local system fonts, disabled search until needed, no eagerly embedded PDFs, compressed first-page thumbnails, no R2 credentials in the browser or repository.
 - Compatibility constraints: original GA4 ID and Google Search Console verification files preserved; GA loads only for production builds on the real production hostname.
 - Test/screenshot expectations: check preserved URLs/files, internal links, development/production Analytics gates, hostile material URLs, empty/nonempty gallery, keyboard interactions, desktop and 320px mobile layouts.
-- Deployment boundary: only isolated local worktree/branch work is authorized now. No main merge/push, Pages settings changes, public preview, or new cloud account/bucket until authorized.
+- Deployment boundary: owner approved the main merge/push, Pages cutover, and archive removal on 2026-10-02. New cloud accounts or paid storage remain outside scope.
 
 ## Open questions
 - [x] Initial materials: ICML poster, five seminar presentations ordered by their title-slide dates, and a separate SOP copy with the three program-fit faculty names replaced by OOO. Original source files remain untouched.
-- [ ] Writing archive: retained outside primary navigation to preserve existing links; owner is considering removing posts and drafts. No deletion performed in this revision.
+- [x] Writing archive: removed with posts, drafts, unused article assets, and MathJax following owner approval on 2026-10-02.
 - [ ] Future external storage provider/domain: use explicit HTTPS file URLs now; R2 provisioning and billing are separate from this local implementation.

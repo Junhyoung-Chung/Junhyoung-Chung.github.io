@@ -44,13 +44,6 @@ defaults:
       layout: material
       nav_exclude: true
       materials_view: true
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: article
-      nav_exclude: true
-      math: true
 plugins:
   - jekyll-seo-tag
   - jekyll-include-cache

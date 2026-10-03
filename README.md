@@ -2,7 +2,7 @@
 
 A small Jekyll site using Just the Docs 0.12.0, with a first-page material gallery and on-demand PDF previews.
 
-**This branch is an isolated review candidate. Production replacement requires Junhyoung's final approval.** See [MIGRATION.md](MIGRATION.md) for the cutover and rollback procedure, and [DESIGN.md](DESIGN.md) for the approved design.
+The redesign and removal of the writing archive were approved by Junhyoung on October 2, 2026. See [MIGRATION.md](MIGRATION.md) for deployment and rollback, and [DESIGN.md](DESIGN.md) for the design.
 
 ## Local preview
 
@@ -83,11 +83,11 @@ Official references: [R2 public buckets](https://developers.cloudflare.com/r2/bu
 
 - The CV remains at `/assets/CV.pdf`; update `cv_updated` when replacing it.
 - Publications retain **Journal Papers → Conference Paper**, including the intentional singular.
-- `/home/` forwards to the new homepage. `/research/`, `/archive/`, and four dated article URLs remain available.
-- Drafts are retained as source and never published by the normal build.
+- `/home/` forwards to the new homepage; `/research/` remains available. The writing archive and dated article URLs were intentionally removed.
+- Posts, drafts, their article layout, and unused writing images were removed. Their originals remain in Git history and the pre-redesign backup tag.
 - `google5272b05d391d3ed0.html` and `googlee35a5a5e4a9bd991.html` remain unchanged for Google site verification.
 - The original GA4 ID, `G-CH97FJJG6N`, is configured in `_config.yml`. Its loader is in `_includes/analytics.html`; do not set `ga_tracking` as well, which would duplicate tracking.
-- MathJax loads only on archived articles. Search, comments, external fonts, and the old TeXt frontend are not loaded on the main pages.
+- MathJax, search, comments, external fonts, and the old TeXt frontend are not loaded.
 
 ## Validation
 
@@ -106,4 +106,4 @@ node tests/analytics.test.cjs
 
 `--compare-base` is specifically for this migration review and checks that the CV matches the original revision byte for byte. Omit it for future intentional CV updates. Both Google verification files always retain their original bytes.
 
-The check workflow builds and validates without publishing. The production workflow has no push trigger and only runs on `main` with the explicit `publish-just-the-docs` confirmation input. GitHub Pages must be configured to use Actions at the approved cutover; no Pages settings are changed by building locally.
+The check workflow builds and validates without publishing. The production workflow has no push trigger and only runs on `main` with the explicit `publish-just-the-docs` confirmation input. GitHub Pages uses the prepared Actions workflow after cutover. Building locally never publishes the site.

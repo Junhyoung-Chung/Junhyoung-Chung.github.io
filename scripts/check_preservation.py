@@ -33,15 +33,12 @@ def main():
         assert title in publications, f"Missing publication: {title}"
     assert publications.index("Journal Papers") < publications.index("Conference Paper")
     if args.site:
-        routes = ["index.html", "home/index.html", "publications/index.html", "research/index.html", "archive/index.html", "404.html"]
-        for post in (ROOT / "_posts").glob("*.md"):
-            year, month, day, slug = post.stem.split("-", 3)
-            routes.append(f"{year}/{month}/{day}/{slug}.html")
+        routes = ["index.html", "home/index.html", "publications/index.html", "research/index.html", "materials/index.html", "404.html"]
         for route in routes:
             assert (target / route).is_file(), f"Missing route: {route}"
     else:
         assert "G-CH97FJJG6N" in (ROOT / "_config.yml").read_text()
-    print("PASS: CV" + (" bytes" if args.compare_base else " PDF") + ", verification bytes, publication titles/order" + (", legacy routes" if args.site else ", GA4 ID"))
+    print("PASS: CV" + (" bytes" if args.compare_base else " PDF") + ", verification bytes, publication titles/order" + (", core routes" if args.site else ", GA4 ID"))
 
 if __name__ == "__main__":
     main()

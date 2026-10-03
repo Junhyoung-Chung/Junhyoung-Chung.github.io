@@ -1,52 +1,41 @@
 ---
-layout: landing
-title: Junhyoung Chung
-<!-- excerpt: >
-  Welcome to my personal website! -->
-
-article_header:
-
-  actions:
-    - text: Blog
-      type: error
-      url: /home
-  
-    - text: Google Scholar
-      type: info
-      url: https://scholar.google.com/citations?user=AuQ5vRMAAAAJ&hl=en
-
-    - text: CV
-      type: theme-light
-      url: /assets/CV.pdf
-
-  height: 100vh
-
-  theme: dark
-  
-  background_image:
-    gradient: "linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .6))"
-    src: /assets/images/greeting1.jpg
-
-<!-- data:
-  sections:
-    - title: Robust causal inference
-      excerpt: I am interested in developing a consistent algorithm that robustly estimates a true causal structure. Recently, I have focused on learning an anchored linear structural equation model in the presence of measurement error.
-      image:
-        src: assets/images/anchored-causal-model.png
-        is_row: true
-        full_width: true
-        style: "max-width: 1200px;"
-    
-    - title: Machine learning
-      excerpt: Applying machine learning methods to real-world problems also intrigues me.
-      children:
-        - title: Learning-to-Rank
-          excerpt: I addressed a horse race rank prediction using pair-wise learning approaches.
-          image:
-            src: assets/images/horserace-cat_shap.png
-
-        - title: Zero-inflated count regression
-          excerpt: I utilized the Hurdle model to predict high-risk mountain areas in Korea.
-          image:
-            src: assets/images/fire-grid_seorak.png -->
+title: Home
+nav_order: 1
+description: Junhyoung Chung is a first-year Statistics Ph.D. student at UC Davis working on optimal transport and robust graphical models.
 ---
+<div class="profile-header">
+  <div>
+    <p class="eyebrow">Statistics · UC Davis</p>
+    <h1>Junhyoung Chung <span class="korean-name" lang="ko">정준형</span></h1>
+    <p class="profile-role">First-year Ph.D. student, Department of Statistics</p>
+    <div class="profile-links"><a href="mailto:junhyoung0534@gmail.com">Email</a><a href="https://scholar.google.com/citations?user=AuQ5vRMAAAAJ&amp;hl=en">Google Scholar</a><a href="https://www.linkedin.com/in/junhyoung-chung-85635a235">LinkedIn</a><a href="{{ '/assets/CV.pdf' | relative_url }}">CV <span class="link-note">{{ site.cv_updated }}</span></a></div>
+  </div>
+</div>
+<div class="intro-copy">
+  <p>I am a first-year Ph.D. student in the <a href="https://statistics.ucdavis.edu/">Department of Statistics at UC Davis</a>. Before coming here, I received my M.S. in Statistics at Seoul National University, advised by <a href="https://sites.google.com/view/gwpark">Gunwoong Park</a>, and my B.S. in Statistics and B.A. in Economics from the same university.</p>
+  <p>I develop principled statistical methods that uncover essential structure in imperfect and complex data. My research connects <strong>optimal transport</strong>, <strong>graphical models</strong>, and <strong>robust statistical learning</strong>, with an emphasis on theoretical guarantees and practical applicability.</p>
+</div>
+<section class="home-section" aria-labelledby="research-heading">
+  <div class="section-heading"><h2 id="research-heading">Research interests</h2><a href="{{ '/research/' | relative_url }}">More about my research <span aria-hidden="true">→</span></a></div>
+  <div class="research-topics">
+    <div><h3>Optimal transport</h3><p>Geometry-aware methods for aligning heterogeneous data and non-Euclidean structures.</p></div>
+    <div><h3>Graphical models</h3><p>Reliable structure learning under measurement error and data contamination.</p></div>
+    <div><h3>Statistical learning</h3><p>Interpretable models for spatial risk, ranked data, and real-world problems.</p></div>
+  </div>
+</section>
+<section class="home-section" aria-labelledby="materials-heading">
+  <div class="section-heading"><h2 id="materials-heading">Research materials</h2><a href="{{ '/materials/' | relative_url }}">Browse materials <span aria-hidden="true">→</span></a></div>
+  <p>Posters, seminar slides, and other documents, collected in one place.</p>
+</section>
+<section class="home-section" aria-labelledby="news-heading">
+  <h2 id="news-heading">News</h2>
+  <ul class="news-list">
+    <li><time datetime="2026-09">Sep 2026</time><span>I completed my role at Seoul National University and arrived in Davis!</span></li>
+    <li><time datetime="2026-07">Jul 2026</time><span>I completed my research internship at <a href="https://www.krafton.ai/en/">Krafton AI</a> and joined Seoul National University as an external researcher.</span></li>
+    <li><time datetime="2026-06">Jun 2026</time><span>I will be joining UC Davis as an incoming Ph.D. student in Statistics.</span></li>
+    <li><time datetime="2026-04">Apr 2026</time><span>Our paper <a href="https://proceedings.mlr.press/v306/chung26d.html">Convex distance operator transport</a> has been accepted to ICML 2026.</span></li>
+    <li><time datetime="2026-03">Mar 2026</time><span>I started as a research intern at Krafton AI.</span></li>
+    <li><time datetime="2026-02">Feb 2026</time><span>I received my M.S. in Statistics from Seoul National University.</span></li>
+    <li><time datetime="2025-12">Dec 2025</time><span>I will be attending NeurIPS 2025.</span></li>
+  </ul>
+</section>

@@ -1,0 +1,6 @@
+{% if jekyll.environment == 'production' and site.analytics.measurement_id %}
+  {% include analytics.html %}
+{% endif %}
+{% if page.materials_view %}
+<script src="{{ '/assets/js/materials.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+{% endif %}

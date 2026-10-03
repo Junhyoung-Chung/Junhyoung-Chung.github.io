@@ -3,6 +3,15 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+.bundle/
+_site-production/
+_site-prefix/
+review/screenshots/
+review/source-pdfs/
+review/private/
+.omx/
+__pycache__/
+*.pyc
 
 # oh-my-claudecode state
 .omc/

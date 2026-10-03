@@ -1,0 +1,53 @@
+name: Publish approved website
+# There is deliberately no push trigger. This workflow is for the approved cutover.
+on:
+  workflow_dispatch:
+    inputs:
+      confirmation:
+        description: 'After final approval, enter publish-just-the-docs'
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main' && inputs.confirmation == 'publish-just-the-docs'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2.10'
+          bundler: '2.4.19'
+          bundler-cache: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: ruby scripts/validate_materials.rb
+      - run: ruby tests/materials_test.rb
+      - run: node --check assets/js/materials.js
+      - run: JEKYLL_ENV=production bundle exec jekyll build --destination _site-production
+      - run: python3 scripts/check_preservation.py --site _site-production
+      - run: python3 scripts/check_site.py _site-production --production
+      - run: node tests/analytics.test.cjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site-production/
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy approved build
+        id: deployment
+        uses: actions/deploy-pages@v4

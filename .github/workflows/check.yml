@@ -1,0 +1,39 @@
+name: Check redesign
+on:
+  push:
+    branches: [redesign/just-the-docs]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2.10'
+          bundler: '2.4.19'
+          bundler-cache: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: ruby scripts/validate_materials.rb
+      - run: ruby tests/materials_test.rb
+      - run: node --check assets/js/materials.js
+      - run: bundle exec jekyll build
+      - run: python3 scripts/check_preservation.py --site _site
+      - run: python3 scripts/check_site.py _site
+      - run: JEKYLL_ENV=production bundle exec jekyll build --destination _site-production
+      - run: python3 scripts/check_preservation.py --site _site-production
+      - run: python3 scripts/check_site.py _site-production --production
+      - run: node tests/analytics.test.cjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: review-site
+          path: _site/
+          retention-days: 7

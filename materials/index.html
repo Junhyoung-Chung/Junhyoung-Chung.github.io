@@ -1,0 +1,26 @@
+---
+title: Materials
+nav_order: 3
+materials_view: true
+---
+<p class="eyebrow">Research &amp; learning</p>
+<h1>Materials</h1>
+<p class="page-intro">Posters, seminar slides, and application materials. Select a thumbnail to preview a document.</p>
+{% assign materials = site.materials | sort: 'year' | reverse %}
+{% if materials.size > 0 %}
+{% assign years = materials | group_by: 'year' %}
+{% for year in years %}
+<section class="materials-year" aria-labelledby="year-{{ year.name }}">
+<div class="materials-heading"><h2 id="year-{{ year.name }}">{{ year.name }}</h2><span>{{ year.items.size }} {% if year.items.size == 1 %}document{% else %}documents{% endif %}</span></div>
+<div class="materials-gallery">
+{% assign undated = year.items | where_exp: 'item', 'item.event_date == nil' %}
+{% assign dated = year.items | where_exp: 'item', 'item.event_date != nil' | sort: 'event_date' | reverse %}
+{% for material in dated %}{% include material_card.html material=material %}{% endfor %}
+{% for material in undated %}{% include material_card.html material=material %}{% endfor %}
+</div>
+</section>
+{% endfor %}
+{% include material_preview.html %}
+{% else %}
+<p class="materials-empty">Materials will be added here as they become available.</p>
+{% endif %}

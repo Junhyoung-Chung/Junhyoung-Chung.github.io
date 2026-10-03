@@ -56,7 +56,7 @@
 
 ## Responsive behavior
 - Supported breakpoints/devices: 320px mobile through desktop.
-- Layout adaptations: Just the Docs mobile menu; two/one gallery columns for readable long document titles; paired research figures stack on narrow screens; viewer and actions remain within viewport. Cards align actions within each row.
+- Layout adaptations: Just the Docs mobile menu; two/one gallery columns for readable long document titles; paired research figures stack on narrow screens; viewer and actions remain within viewport. Every card places its description below the thumbnail, including years with only one document. Cards align actions within each row.
 - Touch/hover differences: preview is explicitly activated; no hover-only content.
 
 ## Interaction states

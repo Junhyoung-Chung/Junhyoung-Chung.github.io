@@ -106,4 +106,4 @@ node tests/analytics.test.cjs
 
 `--compare-base` is specifically for this migration review and checks that the CV matches the original revision byte for byte. Omit it for future intentional CV updates. Both Google verification files always retain their original bytes.
 
-The check workflow builds and validates without publishing. The production workflow has no push trigger and only runs on `main` with the explicit `publish-just-the-docs` confirmation input. GitHub Pages uses the prepared Actions workflow after cutover. Building locally never publishes the site.
+The check workflow builds and validates pull requests without publishing. Every push to `main` (including a merged pull request) automatically runs **Publish website**, which builds, validates, and deploys to GitHub Pages only when all checks pass. Other branches are not deployed. To retry a deployment manually, choose **Actions → Publish website → Run workflow → main**; no confirmation text is required. Building locally never publishes the site.

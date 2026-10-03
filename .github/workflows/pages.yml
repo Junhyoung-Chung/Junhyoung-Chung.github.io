@@ -1,12 +1,8 @@
-name: Publish approved website
-# There is deliberately no push trigger. This workflow is for the approved cutover.
+name: Publish website
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
-    inputs:
-      confirmation:
-        description: 'After final approval, enter publish-just-the-docs'
-        required: true
-        type: string
 permissions:
   contents: read
 concurrency:
@@ -14,7 +10,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
-    if: github.ref == 'refs/heads/main' && inputs.confirmation == 'publish-just-the-docs'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -48,6 +44,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy approved build
+      - name: Deploy validated build
         id: deployment
         uses: actions/deploy-pages@v4

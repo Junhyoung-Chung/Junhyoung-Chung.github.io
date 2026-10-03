@@ -1,171 +1,152 @@
 ---
 title: Research
-nav_exclude: true
+nav_order: 2
 ---
 
-<p class="eyebrow">Research</p>
-<h1>Statistical structure in complex data</h1>
+<header class="page-header">
+  <p class="eyebrow">Research</p>
+  <h1>Statistical structure in complex data</h1>
 
-<h2>Statistical algorithms for complex data</h2>
-
-<p>
-While modern AI often relies on massive models and large-scale computation, I believe that the essential information in data is fundamentally small and structured. 
-My goal is to design statistical algorithms that identify and utilize this structure, enabling both statistical and computational efficiency.
-</p>
-
-<div style="text-align: left; margin: 25px 0;">
-  <a href="https://scholar.google.com/citations?user=AuQ5vRMAAAAJ&hl=en&oi=ao" 
-     target="_blank"
-     style="
-       display: inline-block;
-       padding: 10px 18px;
-       border: 1px solid #444;
-       border-radius: 4px;
-       text-decoration: none;
-       font-weight: 500;
-       color: #222;
-       background-color: #f8f8f8;
-     ">
-    View my Google Scholar
-  </a>
-</div>
-
-<hr>
-
-<h2>Optimal transport</h2>
-
-<div style="margin: 25px 0 35px 0;">
-
-  <div style="text-align: center; margin-bottom: 18px;">
-    <img src="/assets/images/space_alignment.jpg"
-         alt="optimal transport"
-         style="
-           width: 100%;
-           /* max-width: 520px; */
-           height: auto;
-           border-radius: 10px;
-         ">
+  <div class="research-lede">
+    <h2>Statistical algorithms for complex data</h2>
+    <p>
+    While modern AI often relies on massive models and large-scale computation, I believe that the essential information in data is fundamentally small and structured.
+    My goal is to design statistical algorithms that identify and utilize this structure, enabling both statistical and computational efficiency.
+    </p>
+    <a class="text-action preview-trigger" href="https://scholar.google.com/citations?user=AuQ5vRMAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener">View my Google Scholar</a>
   </div>
+</header>
 
-  <!-- Description -->
+<section class="research-area">
+  <h2>Optimal transport</h2>
+
+  <figure class="research-figure">
+    <img src="{{ '/assets/images/space_alignment.jpg' | relative_url }}"
+         alt="Diagram aligning graph-structured source and target spaces through a coupling"
+         width="1051"
+         height="441"
+         loading="lazy"
+         decoding="async">
+  </figure>
+
   <p>
   Optimal transport has emerged as a fundamental tool in statistics and machine learning for comparing and aligning probability distributions across diverse domains.
   Beyond its classical formulations, there is an increasing demand for transport methodologies that respect the underlying geometry and structural characteristics of the data spaces.
   My research focuses on developing <strong>geometry-aware and fused optimal transport frameworks</strong> that jointly account for domain structure and feature correspondence, enabling principled alignments between heterogeneous spaces.
   </p>
 
-  <p><strong>Key project:</strong></p>
-
-  <ul style="margin-left: 0; padding-left: 0; list-style-position: inside;">
-    <li>
-      Chung, J., Song, E., Kim, W., & Park, G. (2026). Convex distance operator transport: A convex and geometry-preserving formulation. arXiv preprint arXiv:2606.02047.
-    </li>
-  </ul>
-
-</div>
-
-<hr>
-
-<h2>Graphical models</h2>
-
-<div style="margin: 25px 0 35px 0;">
-
-  <div style="text-align: center; margin-bottom: 18px;">
-    <img src="/assets/images/anchored-DAG.png"
-         alt="anchored-DAG"
-         style="
-           width: 100%;
-           max-width: 520px;
-           height: auto;
-           border-radius: 10px;
-         ">
+  <div class="research-projects">
+    <p><strong>Key project:</strong></p>
+    <ul>
+      <li>
+        Chung, J., Song, E., Kim, W., &amp; Park, G. (2026). Convex distance operator transport: A convex and geometry-preserving formulation. arXiv preprint arXiv:2606.02047.
+      </li>
+    </ul>
   </div>
+</section>
 
-  <!-- Description -->
+<section class="research-area">
+  <h2>Graphical models</h2>
+
+  <figure class="research-figure">
+    <img src="{{ '/assets/images/anchored-DAG.png' | relative_url }}"
+         alt="Anchored DAG linking latent variables 1–3 to observed variables 1′–3′"
+         width="1190"
+         height="704"
+         loading="lazy"
+         decoding="async">
+  </figure>
+
   <p>
   Graphical models have long served as a principled framework for uncovering underlying causal structures, benefiting a wide range of fields such as biology, social science, and environmental science.
   However, data in these domains are often subject to measurement error and other forms of contamination.
   My research focuses on developing <strong>graphical models robust to data contamination</strong>, enabling principled and stable learning of dependency structures in complex and imperfect data environments.
   </p>
 
-  <p><strong>Key projects:</strong></p>
-
-  <ul style="margin-left: 0; padding-left: 0; list-style-position: inside;">
-    <li>
-      Shin, J., Chung, J., Hwang, S., & Park, G. (2025). Discovering causal structures in corrupted data: frugality in anchored Gaussian DAG models. Computational Statistics & Data Analysis, 108267. <br>
-    </li>
-    <li>
-      Chung, J., Ahn, Y., Shin, D., & Park, G. (2025). Learning distribution-free anchored linear structural equation models in the presence of measurement error. Journal of the Korean Statistical Society, 54(2), 361-385.
-    </li>
-  </ul>
-
-</div>
-
-<hr>
-
-<h2>Application</h2>
-
-<h3>Spatial data</h3>
-
-<div style="margin: 25px 0 35px 0;">
-
-  <div style="display: flex; justify-content: center;">
-    <figure style="text-align: center;">
-        <img src="/assets/images/grid_seorak.jpg" alt="Single 1km X 1km grid of Seorak" style="width: 100%; margin-right: 10px;">
-    </figure>
-    <figure style="text-align: center;">
-        <img src="/assets/images/grid_seorak_type.jpg" alt="Visualization of grid by accident type in Seorak" style="width: 100%;">
-    </figure>
+  <div class="research-projects">
+    <p><strong>Key projects:</strong></p>
+    <ul>
+      <li>
+        Shin, J., Chung, J., Hwang, S., &amp; Park, G. (2025). Discovering causal structures in corrupted data: frugality in anchored Gaussian DAG models. Computational Statistics &amp; Data Analysis, 108267. <br>
+      </li>
+      <li>
+        Chung, J., Ahn, Y., Shin, D., &amp; Park, G. (2025). Learning distribution-free anchored linear structural equation models in the presence of measurement error. Journal of the Korean Statistical Society, 54(2), 361-385.
+      </li>
+    </ul>
   </div>
+</section>
 
-  <p>
-  I am interested in spatial data where risk is distributed over complex geographic domains, such as mountain regions with heterogeneous terrain and weather patterns.
-  In one of my projects, I developed statistical models that integrate domain knowledge, covariates, and spatial structure to predict <strong>mountain accident risk</strong> and identify high risk areas in a transparent and data driven manner.
-  </p>
-  <p>
-  This line of work has motivated a broader interest in methods that respect underlying spatial geometry, handle sparsity in observations, and provide interpretable output for decision making.
-  </p>
+<section class="research-area">
+  <h2>Application</h2>
 
-  <p><strong>Key project:</strong></p>
+  <section class="research-application">
+    <h3>Spatial data</h3>
 
-  <ul style="margin-left: 0; padding-left: 0; list-style-position: inside;">
-    <li>
-      Chung, J., Lee, S., & Park, G. (2025). Prediction of high-risk mountain accident areas using a Hurdle model. The Korean Journal of Applied Statistics, 38(4), 531-551.
-    </li>
-  </ul>
-</div>
+    <div class="research-figure-pair">
+      <figure class="research-figure">
+        <img src="{{ '/assets/images/grid_seorak.jpg' | relative_url }}"
+             alt="Mountain accident locations by cause with a highlighted grid in Seorak"
+             width="2880"
+             height="1800"
+             loading="lazy"
+             decoding="async">
+      </figure>
+      <figure class="research-figure">
+        <img src="{{ '/assets/images/grid_seorak_type.jpg' | relative_url }}"
+             alt="Seorak grid cells colored by dominant accident type"
+             width="2880"
+             height="1800"
+             loading="lazy"
+             decoding="async">
+      </figure>
+    </div>
 
-<h3>Ranked data</h3>
+    <p>
+    I am interested in spatial data where risk is distributed over complex geographic domains, such as mountain regions with heterogeneous terrain and weather patterns.
+    In one of my projects, I developed statistical models that integrate domain knowledge, covariates, and spatial structure to predict <strong>mountain accident risk</strong> and identify high risk areas in a transparent and data driven manner.
+    </p>
+    <p>
+    This line of work has motivated a broader interest in methods that respect underlying spatial geometry, handle sparsity in observations, and provide interpretable output for decision making.
+    </p>
 
-<div style="margin: 25px 0 35px 0;">
+    <div class="research-projects">
+      <p><strong>Key project:</strong></p>
+      <ul>
+        <li>
+          Chung, J., Lee, S., &amp; Park, G. (2025). Prediction of high-risk mountain accident areas using a Hurdle model. The Korean Journal of Applied Statistics, 38(4), 531-551.
+        </li>
+      </ul>
+    </div>
+  </section>
 
-  <div style="text-align: center; margin-bottom: 18px;">
-    <img src="/assets/images/horserace-catboost_result.png"
-         alt="Mountain accident risk map"
-         style="
-           width: 100%;
-           height: auto;
-           border-radius: 10px;
-         ">
-  </div>
+  <section class="research-application">
+    <h3>Ranked data</h3>
 
-  <p>
-    I am interested in ranked data where the primary object of inference is an ordering rather than a single numeric outcome.
-    In one of my projects, I applied <strong>learning-to-rank methods</strong> to horse race data, treating each race as a query and each horse as an item.
-    This analysis revealed that pairwise approaches (e.g., LambdaMART) achieve better prediction performance than pointwise approaches (e.g., Random Forest).    
-  </p>
-  <p>
-  This work motivated my broader interest in ranking problems, where samples exhibit strong mutual dependence and must be modeled jointly rather than independently.
-  </p>
+    <figure class="research-figure">
+      <img src="{{ '/assets/images/horserace-catboost_result.png' | relative_url }}"
+           alt="Horse-race ranking illustration with predicted percentages"
+           width="4262"
+           height="2039"
+           loading="lazy"
+           decoding="async">
+    </figure>
 
-  <p><strong>Key project:</strong></p>
+    <p>
+      I am interested in ranked data where the primary object of inference is an ordering rather than a single numeric outcome.
+      In one of my projects, I applied <strong>learning-to-rank methods</strong> to horse race data, treating each race as a query and each horse as an item.
+      This analysis revealed that pairwise approaches (e.g., LambdaMART) achieve better prediction performance than pointwise approaches (e.g., Random Forest).
+    </p>
+    <p>
+    This work motivated my broader interest in ranking problems, where samples exhibit strong mutual dependence and must be modeled jointly rather than independently.
+    </p>
 
-  <ul style="margin-left: 0; padding-left: 0; list-style-position: inside;">
-    <li>
-      Chung, J., Shin, D., Hwang, S., & Park, G. (2024). Horse race rank prediction using learning-to-rank approaches. The Korean Journal of Applied Statistics, 37(2), 239-253.
-    </li>
-  </ul>
-
-</div>
-
-
+    <div class="research-projects">
+      <p><strong>Key project:</strong></p>
+      <ul>
+        <li>
+          Chung, J., Shin, D., Hwang, S., &amp; Park, G. (2024). Horse race rank prediction using learning-to-rank approaches. The Korean Journal of Applied Statistics, 37(2), 239-253.
+        </li>
+      </ul>
+    </div>
+  </section>
+</section>
